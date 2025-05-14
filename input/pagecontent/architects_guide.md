@@ -54,9 +54,32 @@ The Reference Atchitecture will make use of global best practices and open stand
 * work with releveant SDOs to develop the standards; or
 * utiluze country implementations as informative examples for implementers to consider. 
 
-##### Use of HL7 FHIR
+##### Use of Logical Models 
+
+##### Use of HL7® FHIR®
+In consideration of the:
+
+* scale of current and planned global adoption rate at national and regional levels;
+* the size of the open-source ecosystem, the open governance for the maintenance; and
+* the availability of training materials and programs of HL7® FHIR® 
+
+the identification of relevant of HL7® FHIR® syntactic standards for the representation and exchange of health information will be prioritized.  
+
+In the case that there are alternative open standards to meet sub-domain specific business requirements (e.g. DICOM, OMOP), such standards will be considered with a reflection on:
+
+* the interface/interactions of that standard with any corresponding HL7® FHIR®; and
+* the required capacity and skill-sets needed for the implementation. 
 
 ##### Use of Terminolgies
+
+The use of fully open, normative terminolgies SHALL be utilized where avaiable and relevant to the use case.  Such termonolgies include:
+* [https://www.who.int/groups/who-family-of-international-classifications-network](WHO Family of International Classifications) (WHO-FIC), inclusive of the [International Classification of Diseases](ICD) https://icd.who.int/en/;
+* [https://loinc.org/](LOINC);
+* [https://terminology.hl7.org/codesystems.html](HL7 managed code systems); and
+* [https://www.snomed.org/gps](SNOMED Global Patient Set (GPS)).
+
+The utilization of terminologies for specific health content areas (e.g. HIV, Immunizations) is subject to the general SMART Guidelines' Standard Operating Procedures for the development of [https://smart.who.int/ig-starter-kit/l2_dak_authoring.html](Digital Adapation Kits).
+
 
 #### Relationship to OpenHIE 
 The Reference Architecture draws from the [OpenHIE](https://ohie.org/) architectural components, in particular the Business Domain Services & Registry Services.
