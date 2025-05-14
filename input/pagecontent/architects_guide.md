@@ -73,10 +73,10 @@ In the case that there are alternative open standards to meet sub-domain specifi
 ##### Use of Terminolgies
 
 The use of fully open, normative terminolgies SHALL be utilized where avaiable and relevant to the use case.  Such termonolgies include:
-* [https://www.who.int/groups/who-family-of-international-classifications-network](WHO Family of International Classifications) (WHO-FIC), inclusive of the [International Classification of Diseases](ICD) https://icd.who.int/en/;
-* [https://loinc.org/](LOINC);
-* [https://terminology.hl7.org/codesystems.html](HL7 managed code systems); and
-* [https://www.snomed.org/gps](SNOMED Global Patient Set (GPS)).
+* [WHO Family of International Classifications](https://www.who.int/groups/who-family-of-international-classifications-network) (WHO-FIC), inclusive of the [International Classification of Diseases](https://icd.who.int/en/) (ICD) ;
+* [LOINC](https://loinc.org/);
+* [HL7 managed code systems](https://terminology.hl7.org/codesystems.html]); and
+* [SNOMED Global Patient Set](https://www.snomed.org/gps) (GPS).
 
 The utilization of terminologies for specific health content areas (e.g. HIV, Immunizations) is subject to the general SMART Guidelines' Standard Operating Procedures for the development of [https://smart.who.int/ig-starter-kit/l2_dak_authoring.html](Digital Adapation Kits).
 
