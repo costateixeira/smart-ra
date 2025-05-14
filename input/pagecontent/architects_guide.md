@@ -39,6 +39,14 @@ One essential component of this is the definition and representation of the appr
 
 Another essential component are the generic business processes and workflows (which we are standardizing to BPMN diagrams for computability).  These workflows outline the main functionality needed for the actors/generic personas.  The Reference Architecture shall define the digital health infrastructural components and necessary transactions (e.g. messages sent via APIs) to realize these workflows.
 
+#### Normative languasge
+
+THe reference architecture adopts the normative words defined in [IETF Best Current Practice 14: Key words for use in RFCs to Indicate Requirement Levels (BCP-14)](https://www.rfc-editor.org/info/bcp14) (currently [RFC 2119](https://www.rfc-editor.org/info/rfc2119) and [RFC 8174](https://www.rfc-editor.org/info/rfc8174), certain words indicate whether a specific content of the Technical Framework is normative. The key words "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL NOT", "SHOULD", "SHOULD NOT", "RECOMMENDED", "MAY", and "OPTIONAL" in this document are to be interpreted as described in [RFC 2119](https://www.rfc-editor.org/info/rfc2119). Informative content does not contain these key words.
+#### Use of Standards
+
+The Reference Architecture SHALL make us of open standards which are maintained by a Standards Development Organization (SDO) with an open partiicipation policy and whhich are unencumbered by license restrictions that would limit the implementation.  This use of standards SHALL apply to:
+* descriptions of API transactions between system actors; and
+* message semantics. 
 
 #### Relationship to OpenHIE 
 The Reference Architecture draws from the [OpenHIE](https://ohie.org/) architectural components, in particular the Business Domain Services & Registry Services.
