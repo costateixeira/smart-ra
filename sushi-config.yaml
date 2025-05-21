@@ -148,8 +148,8 @@ menu:
     Dependencies: dependencies.html
     References: references.html
     Adapting Guidelines for Country use: adapting.html
+    Architect's Guide: architects_guide.html
     Scope: scoping.html
-    Architect Guide: architects_guide.html
   Business Requirements: 
     Concepts: concepts.html
     Generic Personas: personas.html
