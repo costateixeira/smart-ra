@@ -56,6 +56,8 @@ The Reference Atchitecture will make use of global best practices and open stand
 
 ##### Use of Logical Models 
 
+When describing the data needs for a use case or transaction, the use of [Logical Models](https://smart.who.int/ig-starter-kit/l3_logicalmodels.html) is highly encouraged.  These can then be mapped to relevant data models (e.g. HL7 FHIR R4). 
+
 ##### Use of HL7® FHIR®
 In consideration of the:
 
@@ -72,7 +74,7 @@ In the case that there are alternative open standards to meet sub-domain specifi
 
 ##### Use of Terminolgies
 
-The use of fully open, normative terminolgies SHALL be utilized where avaiable and relevant to the use case.  Such termonolgies include:
+The use of fully open, normative terminolgies SHALL be utilized where avaiable and relevant to the use case.  The termonolgies, in order of priority, include:
 * [WHO Family of International Classifications](https://www.who.int/groups/who-family-of-international-classifications-network) (WHO-FIC), inclusive of the [International Classification of Diseases](https://icd.who.int/en/) (ICD) ;
 * [LOINC](https://loinc.org/);
 * [HL7 managed code systems](https://terminology.hl7.org/codesystems.html]); and
