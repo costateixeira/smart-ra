@@ -104,7 +104,7 @@ These components should be brought into the architecture by identifying a specif
 
 #### Architects and Technical Writers
 
-
+https://docs.github.com/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax
 ==To Do:== add your name 
 The following people are contributing to the core architecture
 * Carl Leitner (WHO)
@@ -113,6 +113,9 @@ The following people are contributing to the core architecture
 * José Costa Teixeira (Belgium)
 * Anusree Jayakrishnan (Centre for Digital Public Infrastructure)
 * Umer Nisar (CSIRO Australia)
+* Eric Ramirez (El Salvador)
+* Jordi Piera-Jiménez (Catalan Health Service, Spain)
+
 
 
 

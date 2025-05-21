@@ -48,10 +48,10 @@ dependencies:
     version: current
     reason: This IG uses SMART base computable guideline capabilities
 
-  smart.who.int.trust:
-    id: trust
-    version: current
-    reason: This IG uses SMART base computable guideline capabilities
+#  smart.who.int.trust:
+#    id: trust
+#    version: 1.2.0
+#    reason: This IG uses SMART base computable guideline capabilities
     
   smart.who.int.base:
     id: sb
@@ -81,6 +81,8 @@ pages:
       title: License
     architects_guide.md:
       title: Architect's Guide
+    scoping.md:
+      title: Scoping
   business-requirements.md:
     title: Business Requirements
     concepts.md:
@@ -147,6 +149,7 @@ menu:
     References: references.html
     Adapting Guidelines for Country use: adapting.html
     Architect's Guide: architects_guide.html
+    Scope: scoping.html
   Business Requirements: 
     Concepts: concepts.html
     Generic Personas: personas.html
