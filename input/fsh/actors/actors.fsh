@@ -73,7 +73,7 @@ Depending on the governance requirements, this layer may also include tools to c
  including message routing, workflow and service orchestration, and message translation."
 * status = #active
 * experimental = false
-* publisher = "OpenHIE"
+* publisher = "smart-ra"
 * type = #system
 
 
