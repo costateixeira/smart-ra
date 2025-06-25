@@ -79,6 +79,8 @@ pages:
       title: Adapting Guidelines for Country use
     license.md:
       title: License
+    governance.md:
+      title: Governance and Operational Framework for the DPI-H Reference Architecture Technical Working Group (TWG)
     architects_guide.md:
       title: Architect's Guide
     scoping.md:
@@ -148,6 +150,7 @@ menu:
     Dependencies: dependencies.html
     References: references.html
     Adapting Guidelines for Country use: adapting.html
+    Governance and Operational Framework: governance.html
     Architect's Guide: architects_guide.html
     Scope: scoping.html
   Business Requirements: 
