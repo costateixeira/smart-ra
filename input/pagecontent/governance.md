@@ -216,8 +216,8 @@ At least one representative from the Core Architects 
 **Documentation Review Cycle:** 
 -   Initial draft → Peer review → Domain co-chair review → Cross-domain review → Chief Architect approval
 
-#### INDICATIVE WORKFLOW AND DELIVERABLES 
-##### **Development Lifecycle** (indicative timelines, which may differ according to domain) 
+### INDICATIVE WORKFLOW AND DELIVERABLES 
+#### **Development Lifecycle** (indicative timelines, which may differ according to domain) 
 **Phase 1: Requirements and Design (Weeks 1-4)** 
 
 -   Requirements gathering and articulation: requirements definition across business, functional and technology layers 
@@ -250,7 +250,7 @@ At least one representative from the Core Architects 
 -   External expert review of documentation 
 -   Final documentation preparation
 
-##### Key Deliverables
+#### Key Deliverables
 
 **Normative Guidance document** 
 
