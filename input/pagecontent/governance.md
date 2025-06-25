@@ -8,13 +8,13 @@ The Technical Working Group (TWG) is established to support the development of a
 - Create narrative guidance and document best practices 
 - Deliver high-quality, evidence-based technical documentation 
 
- #### Purpose of this document
- To guide TWG members on the modus operandi for the coordinated design, development and documentation of a standards-aligned, scalable, and context-relevant reference architecture for Digital Public Infrastructure for Health (DPI-H). The framework hereby presented provides the foundation for effective collaboration while maintaining the flexibility needed for technical innovation and adaptation to evolving requirements. 
+#### Purpose of this document
+To guide TWG members on the modus operandi for the coordinated design, development and documentation of a standards-aligned, scalable, and context-relevant reference architecture for Digital Public Infrastructure for Health (DPI-H). The framework hereby presented provides the foundation for effective collaboration while maintaining the flexibility needed for technical innovation and adaptation to evolving requirements. 
 
- ### OPERATIONAL STRUCTURE
+### OPERATIONAL STRUCTURE
 
- #### Project Lead (Provided by WHO)
- **Role and Responsibilities**
+#### Project Lead (Provided by WHO)
+**Role and Responsibilities**
 - Coordinate timelines, milestones, and inter-group collaboration.
 - Approves major deliverables and milestone completions 
 - Facilitates cross-domain coordination, alignment and issue resolution  
@@ -81,6 +81,7 @@ At least one representative from the Core Architects 
 <ul><li>Domain group is the GDHCN SAG</li></ul>
 <i>COP established for Personal Health Wallet</i>
 
+
 <li> <b>Metadata Registries Domain</b> </li>
 <ul>
     <li> Terminology Services </li>
@@ -91,6 +92,7 @@ At least one representative from the Core Architects 
 </ul>
 <i>No COP currently identified</i>
 
+
 <li><b>Clinical Services Domain</b> (incl. Patient records and Clinical Workflows) </li>
 <ul>
    <li>Support for SMART Guidelines (Clinical Decision Support Services) </li> 
@@ -99,6 +101,7 @@ At least one representative from the Core Architects 
    <li>Laboratory Information Management Services</li> 
 </ul> 
 <i>No comprehensive COP currently identified (one exists for SMART Guidelines specific areas)</i>
+
 
 <li><b>Health Supply Chain Domain</b></li>
 <ul>
