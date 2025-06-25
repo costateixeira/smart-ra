@@ -1,3 +1,2 @@
-# SMART
-
-Feel free to modify this index page with your own awesome content!
+### v0.1.0
+First Draft Release
