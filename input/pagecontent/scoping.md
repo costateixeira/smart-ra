@@ -1,7 +1,7 @@
 ### DRAFT Architecture Scope
 
 <div style="display:block">
-  <img src="../images/RAscope.JPG" alt="RA alignment image" width="700em"/>
+  <img src="RAscope.JPG" alt="RA alignment image" width="700em"/>
 </div>
 
 The machine-readable DPI-H Reference Architecture (RA) aims to provide a modular, standards-based framework to guide the development and alignment of national digital health systems.
