@@ -37,15 +37,15 @@ dependencies:
   ihe.iti.mcsd: 
     id: IHE_ITI_mCSD
     uri: https://profiles.ihe.net/ITI/mCSD/ImplementationGuide/ihe.iti.mcsd 
-    version: current
+    version: 4.0.0
   ihe.iti.svcm: 
     id: IHE_ITI_SVCM
     uri: https://profiles.ihe.net/ITI/mCSD/ImplementationGuide/ihe.iti.svcm 
-    version: current
+    version: 1.5.1
 
   smart.who.int.pcmt:
     id: pcmt
-    version: current
+    version: 0.1.0
     reason: This IG uses SMART base computable guideline capabilities
 
 #  smart.who.int.trust:
