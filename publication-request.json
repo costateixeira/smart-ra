@@ -1,0 +1,14 @@
+{
+  "package-id" : "smart.who.int.ra",
+  "title" : "Reference Architecture", 
+  "category" : "base",
+  "introduction" : "SMART Reference Architecture",
+  "version" : "0.1.0",
+  "desc" : "0.1.0 draft release",
+  "mode" : "milestone",    
+  "path" : "http://smart.who.int/ra/v0.1.0",
+  "ci-build": "http://worldhealthorganization.github.io/smart-ra",    
+  "first": false,
+  "status" : "draft",
+  "sequence" : "Releases"
+}

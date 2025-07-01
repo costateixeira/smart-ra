@@ -5,7 +5,7 @@ title: Reference Architecture
 description: The Reference Architecture Implementation Guide to be used as a starting point for building infrastructure with the SMART Guidelines aproach
 status: draft # draft | active | retired | unknown
 experimental: false
-version: 0.1.0
+version: 0.2.0
 fhirVersion: 4.0.1 # https://www.hl7.org/fhir/valueset-FHIR-version.html
 #fhirVersion: 4.3.0 # https://www.hl7.org/fhir/valueset-FHIR-version.html
 copyrightYear: 2023+
