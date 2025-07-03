@@ -19,3 +19,5 @@ Please see these [instructions](https://smart.who.int/ig-starter-kit/ig_setup.ht
 
 Feedback and issues about this empty framework can be submitted via the [issues](issues) page, and will be incorporated into subsequent releases.
 
+
+The Core Architects WG is currently responsible for the changes.
