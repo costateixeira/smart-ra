@@ -62,10 +62,18 @@ InstanceOf: ActorDefinition
 Usage: #definition
 * name = "Interoperability Layer"
 * title = "Interoperability Layer"
-* description = "A component that facilitates the exchange of health information between systems by routing, translating, and orchestrating messages."
+* description = """A component that enables communication of services across domains and organizations, This MMAY include:  
+ - Service discovery and identification  
+ - Service identity life cycle management  
+ - Encryption of service to service communications  
+ - Authentication, authorization and permissions at the service level (not application or user level)  
+ - Service monitoring and transaction logging  
+  
+Depending on the governance requirements, this layer may also include tools to centralize service logic including message routing, workflow and service orchestration, and message translation.
+"""
 * status = #active
 * experimental = false
-* publisher = "OpenHIE"
+* publisher = "smart-ra"
 * type = #system
 
 
