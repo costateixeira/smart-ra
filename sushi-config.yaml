@@ -69,6 +69,28 @@ meta:
 pages:
   index.md:
     title: Home
+
+
+    principles.md:
+      title: Architecture principles
+    methodology.md:
+      title: Methodology
+    l1-business.md:
+      title: Business layer
+    l1-business-example.md:
+      title: Business layer - examples
+    l2-functional.md:
+      title: Functional layer
+    l2-functional-example.md:
+      title: Functional layer - examples
+    l3-technology.md:
+      title: Technology layer
+    l3-technology-example.md:
+      title: Technology layer - examples
+
+
+
+
     changes.md:
       title: Changes
     dependencies.md:
