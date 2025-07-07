@@ -1,8 +1,14 @@
 name: CI
 
-on: 
+on:
   push:
-    branches-ignore:    
+    branches-ignore:
       - 'gh-pages'
   pull_request:
   workflow_dispatch:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Hello from GitHub Actions!"
