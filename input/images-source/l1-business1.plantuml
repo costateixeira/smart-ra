@@ -1,0 +1,57 @@
+@startuml
+skinparam linestyle polyline 
+
+skinparam rectangle<<behavior>> {
+	roundCorner 25
+}
+
+sprite $bProcess jar:archimate/business-process
+sprite $bRole jar:archimate/business-role
+sprite $bObject jar:archimate/business-object
+sprite $bGoal jar:archimate/motivation-goal
+sprite $bOutcome jar:archimate/motivation-outcome
+sprite $bCapability jar:archimate/strategy-capability
+
+
+Package "Outcome and Goals" {
+  rectangle "100% Matched\nClient Records" as outcome <<$bOutcome>> #Business
+  rectangle "Unique Patient\nIdentification" as goal <<$bGoal>> #Business
+}
+
+Package Capabilities {
+rectangle "Client Identity Management" as idMgmt <<$bCapability>> #Business
+}
+
+package Functions {
+    rectangle "Register Client" as regClient <<$bProcess>><<behavior>> #Business
+    rectangle "Update Demographics" as updateDemo <<$bProcess>><<behavior>> #Business
+'    rectangle "Match / Merge Records" as matchMerge <<$bProcess>><<behavior>> #Business
+}
+
+package Roles {
+    rectangle "Patient Registrar" as registrar <<$bRole>> #Business
+    rectangle "Data Steward" as steward <<$bRole>> #Business
+}
+
+
+Package "Business Objects" {
+rectangle "Client Record" as client <<$bObject>> #Business
+'rectangle "Client Identifier" as id <<$bObject>> #Business
+}
+
+' Relationships
+registrar -u-> regClient
+steward -u-> updateDemo
+'steward --> matchMerge
+
+regClient -u-> idMgmt
+updateDemo -u-> idMgmt
+'matchMerge --> idMgmt
+
+idMgmt -u-> outcome
+outcome -u-> goal
+
+regClient -u-> client
+updateDemo -u-> client
+'matchMerge --> id
+@enduml

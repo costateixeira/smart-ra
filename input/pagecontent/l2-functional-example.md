@@ -44,37 +44,6 @@ Each application service is represented as <<service>> and is linked from the Cl
 > This structure supports traceability from **business processes** down to **application-level capabilities**, and ultimately to **data and technology layers** if needed.
 
 
-```plantuml
-@startuml
-skinparam rectangle<<service>> {
-  roundCorner 25
-}
-skinparam rectangle<<structure>> {
-  roundCorner 10
-}
-
-sprite $aComponent jar:archimate/application-component
-sprite $aService jar:archimate/application-service
-
-' Application Component
-rectangle "[[# Client Registry\n(AC001)]]" as CR <<$aComponent>><<structure>> #Application
-
-' Application Services
-rectangle "[[# Create Patient Record\n(AS-001)]]" as Svc1 <<$aService>> #Application
-rectangle "[[# Update Patient Record\n(AS-002)]]" as Svc2 <<$aService>> #Application
-rectangle "[[# Query by Identifier\n(AS-003)]]" as Svc3 <<$aService>> #Application
-rectangle "[[# Query by Demographics\n(AS-004)]]" as Svc4 <<$aService>> #Application
-
-' Relationships
-CR -down-> Svc1 : exposes
-CR -down-> Svc2 : exposes
-CR -down-> Svc3 : exposes
-CR -down-> Svc4 : exposes
-
-legend left
-<$aComponent> : Application Component  
-<$aService> : Application Service (Transaction)  
-endlegend
-@enduml
-
-```
+<figure>
+  {% include l2-functional-example.svg %}
+</figure>

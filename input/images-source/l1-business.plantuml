@@ -1,0 +1,61 @@
+@startuml
+title Business Layer Metamodel
+
+'skinparam linestyle polyline 
+
+@startuml
+skinparam rectangle<<structure>> {
+  roundCorner 25
+}
+skinparam rectangle<<behavior>> {
+  roundCorner 25
+}
+skinparam rectangle<<active>> {
+  roundCorner 25
+}
+skinparam rectangle<<passive>> {
+  roundCorner 25
+}
+skinparam linetype polyline
+
+' ArchiMate sprites
+sprite $bRole jar:archimate/business-role
+sprite $bFunction jar:archimate/business-function
+sprite $bCapability jar:archimate/strategy-capability
+sprite $bObject jar:archimate/business-object
+sprite $bGoal jar:archimate/motivation-goal
+sprite $bOutcome jar:archimate/motivation-outcome
+sprite $bPrinciple jar:archimate/principle
+
+' Definitions
+rectangle "Principle" as Principle <<$bPrinciple>><<structure>> #Business
+rectangle "Goal" as Goal <<$bGoal>><<structure>> #Business
+rectangle "Outcome" as Outcome <<$bOutcome>><<structure>> #Business
+rectangle "Capability" as Capability <<$bCapability>><<structure>> #Business
+rectangle "Function" as Function <<$bFunction>><<behavior>> #Business
+rectangle "Role" as Role <<$bRole>><<active>> #Business
+rectangle "Business Object" as Info <<$bObject>><<passive>> #Business
+
+' Relationships
+Principle -right-> Goal : influences
+Goal -r-> Outcome : leads to
+Goal -down-> Capability : motivates
+Capability -down-> Function : realized by
+Function -down-> Info : uses
+Role -left-> Function : performs
+Role -u-> Capability : supports
+Info -up-> Role : managed by
+
+legend left
+Metamodel of Business Layer Concepts  
+based on TOGAF / ArchiMate core relationships
+====
+<$bPrinciple> : principle  
+<$bGoal> : business goal  
+<$bOutcome> : business outcome  
+<$bCapability> : capability  
+<$bFunction> : function  
+<$bRole> : role  
+<$bObject> : business object  
+endlegend
+@enduml
