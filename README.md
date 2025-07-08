@@ -11,7 +11,6 @@
 
 CI-Build: https://worldhealthorganization.github.io/smart-ra/
 
-
 Please see these [instructions](https://smart.who.int/ig-starter-kit/ig_setup.html#github-setup)
 
 
