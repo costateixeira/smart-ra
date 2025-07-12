@@ -1,11 +1,13 @@
-## Application Layer – Client Registry
-
 This section exemplifies the **application-level architecture** of a **Client Registry (CR)**. 
 
 The CR is modeled as an **Application Component**, and it **exposes** a set of distinct **Application Services** representing its supported workflows.
 
 Each service represents a transaction or operation exposed by the CR to other systems such as EMRs or health information exchanges.
 
+
+<figure>
+  {% include functional-architecture-example.svg %}
+</figure>
 
 ---
 
@@ -25,6 +27,7 @@ Each service represents a transaction or operation exposed by the CR to other sy
 | CRWF-2  | Update Patient Record                | Service that supports updating an existing patient’s demographic data.      |
 | CRWF-3  | Query by Identifier                  | Service that allows clients to retrieve a patient record by supplying a unique identifier. |
 | CRWF-4  | Query by Demographics                | Service that enables clients to search for patient records using demographic criteria (e.g., name, birthdate, gender). |
+{:.table-bordered}
 
 Each of these services is **exposed by** the `Client Registry` and can be invoked by external systems through defined interfaces (e.g., RESTful APIs, HL7 v3 messages, IHE transactions). See technology layer for more details.
 
@@ -37,13 +40,3 @@ Each of these services is **exposed by** the `Client Registry` and can be invoke
 
 ---
 
-### Visual Representation (Summary)
-
-Each application service is represented as <<service>> and is linked from the Client Registry application component (<<structure>>), as shown in the diagram.
-
-> This structure supports traceability from **business processes** down to **application-level capabilities**, and ultimately to **data and technology layers** if needed.
-
-
-<figure>
-  {% include l2-functional-example.svg %}
-</figure>

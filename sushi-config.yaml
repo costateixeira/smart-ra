@@ -70,23 +70,27 @@ pages:
   index.md:
     title: Home
 
+    scoping.md:
+      title: Scoping
+
 
     principles.md:
       title: Architecture principles
+    concepts.md:
+      title: Concepts      
+    architects_guide.md:
+      title: Architect's Guide
     methodology.md:
       title: Methodology
-    l1-business.md:
-      title: Business layer
-    l1-business-example.md:
-      title: Business layer - examples
-    l2-functional.md:
-      title: Functional layer
-    l2-functional-example.md:
-      title: Functional layer - examples
-    l3-technology.md:
-      title: Technology layer
-    l3-technology-example.md:
-      title: Technology layer - examples
+
+
+
+    governance.md:
+      title: Governance and Operational Framework for the DPI-H Reference Architecture Technical Working Group (TWG)
+    references.md:
+      title: References
+    license.md:
+      title: License
 
 
 
@@ -95,66 +99,79 @@ pages:
       title: Changes
     dependencies.md:
       title: Dependencies
-    references.md:
-      title: References
-    adapting.md:
-      title: Adapting Guidelines for Country use
-    license.md:
-      title: License
-    governance.md:
-      title: Governance and Operational Framework for the DPI-H Reference Architecture Technical Working Group (TWG)
-    architects_guide.md:
-      title: Architect's Guide
-    scoping.md:
-      title: Scoping
-  business-requirements.md:
-    title: Business Requirements
-    concepts.md:
-      title: Concepts
-    personas.md:
-      title: Generic Personas
-    scenarios.md:
-      title: User Scenarios
-    business-processes.md:
-      title: Business Processes
-    dictionary.md:
-      title: Data Dictionary
-    decision-logic.md:
-      title: Decision-support logic
-    indicators.md:
-      title: Indicator and Performance Metrics
-    functional-requirements.md:
-      title: Functional Requirements
-    non-functional-requirements.md:
-      title: Non-functional Requirements
-  data-models-and-exchange.md:
-    title: Data Models and Exchange
-    system-actors.md:
-      title: System Actors
-    sequence-diagrams.md:
-      title: Sequence Diagrams
-    transactions.md:
-      title: Transactions
-#    logical-models.md:                                                                                                                                                   
-#      title: Logical Models                                                                                                                                              
-    indicators-measures.md:
-      title: Indicators and Measures
-#    profiles.xml:                                                                                                                                                        
-#      title: Content profiles 
-    codings.md:
-      title: Codings
+
+
+#    adapting.md:
+#      title: Adapting Guidelines for Country use
+
+#  business-architecture.md:
+#    title: Business Architecture
+
+  business-architecture.md:
+    title: Business Architecture 
+    business-architecture-example.md:
+      title: Business layer - examples
+
+    # personas.md:
+    #   title: Generic Personas
+    # scenarios.md:
+    #   title: User Scenarios
+    # business-processes.md:
+    #   title: Business Processes
+    # dictionary.md:
+    #   title: Data Dictionary
+    # decision-logic.md:
+    #   title: Decision-support logic
+    # indicators.md:
+    #   title: Indicator and Performance Metrics
+    # functional-requirements.md:
+    #   title: Functional Requirements
+    # non-functional-requirements.md:
+    #   title: Non-functional Requirements
+
+  functional-architecture.md:
+    title: Functional layer
+    functional-architecture-example.md:
+      title: Functional layer - examples
+
+
+  technology-architecture.md:
+    title: Technology layer
+    technology-architecture-example.md:
+      title: Technology layer - examples
+
+
+
+#   data-models-and-exchange.md:
+#     title: Data Models and Exchange
+#     system-actors.md:
+#       title: System Actors
+#     sequence-diagrams.md:
+#       title: Sequence Diagrams
+#     transactions.md:
+#       title: Transactions
+# #    logical-models.md:                                                                                                                                                   
+# #      title: Logical Models                                                                                                                                              
+#     indicators-measures.md:
+#       title: Indicators and Measures
+# #    profiles.xml:                                                                                                                                                        
+# #      title: Content profiles 
+#     codings.md:
+#       title: Codings
+
+
   deployment.md:
     title: Deployment
-    security-privacy.md:
-      title: Security and Privacy Considerations
+#    security-privacy.md:
+#      title: Security and Privacy Considerations
     testing.md: 
       title: Testing
-    test-data.md: 
-      title: Test Data
+#    test-data.md: 
+#      title: Test Data
     reference-implementations.md: 
       title: Reference Implementations
-    trust_domain.md:
-      title: Trust Domains
+#    trust_domain.md:
+#      title: Trust Domains
     downloads.md: 
       title: Downloads
   indices.md:
@@ -167,37 +184,49 @@ pages:
 
 menu:
   Home: 
-    Summary: index.html
+    Intro: index.html
+    Scoping: index.html
+    Principles: changes.html
+    Concepts: concepts.html
+    Architect's Guide: architects_guide.html
+    Methodology: methodology.html
+    Governance: governance.html
+    References: references.html
+    License: license.html
     Changes: changes.html
     Dependencies: dependencies.html
-    References: references.html
-    Adapting Guidelines for Country use: adapting.html
-    Governance and Operational Framework: governance.html
-    Architect's Guide: architects_guide.html
-    Scope: scoping.html
-  Business Requirements: 
-    Concepts: concepts.html
-    Generic Personas: personas.html
-    User Scenarios: scenarios.html
-    Business Processes: business-processes.html
-    Data Dictionary: dictionary.html
-    Decision-support Logic: decision-logic.html
-    Indicator and Performance Metrics: indicators.html
-    Functional Requirements: functional-requirements.html
-    Non-functional Requirements: non-functional-requirements.html
-  Data Models and Exchange:
-    System Actors: system-actors.html
-    Sequence Diagrams: sequence-diagrams.html
-    Transactions: transactions.html
-    Indicators and Measures: indicators-measures.html
-    Codings: codings.html
+
+  Business: 
+    Business Architecture: business-architecture.html
+    Business Architecture Examples: business-architecture-example.html
+    # Generic Personas: personas.html
+    # User Scenarios: scenarios.html
+    # Business Processes: business-processes.html
+    # Data Dictionary: dictionary.html
+    # Decision-support Logic: decision-logic.html
+    # Indicator and Performance Metrics: indicators.html
+    # Functional Requirements: functional-requirements.html
+    # Non-functional Requirements: non-functional-requirements.html
+  Functional: 
+    Functional Architecture: functional-architecture.html
+    Functional Architecture Examples: functional-architecture-example.html
+  Technology: 
+    Technology Architecture: technology-architecture.html
+    Technology Architecture Examples: technology-architecture-example.html
+
+#  Data:
+    # System Actors: system-actors.html
+    # Sequence Diagrams: sequence-diagrams.html
+    # Transactions: transactions.html
+    # Indicators and Measures: indicators-measures.html
+    # Codings: codings.html
 
   Deployment:
-    Security and Privacy Considerations: security-privacy.html
+#    Security and Privacy Considerations: security-privacy.html
     Testing: testing.html
-    Test Data: test-data.html
+#    Test Data: test-data.html
     Reference Implementations: reference-implementations.html
-    Trust Domains: trust_domain.html
+#    Trust Domains: trust_domain.html
     Downloads: downloads.html
 
   Indices:

@@ -1,4 +1,3 @@
-# Business View: Client Registry
 
 This page presents the **Business Architecture** for a national or regional **Client Registry**, a foundational capability for integrated, person-centered healthcare.
 
@@ -12,7 +11,7 @@ This page serves as a **business-readable entry point** to the Client Registry B
 
 ---
 
-## Methodology Note
+### Methodology Note
 
 The example **Client Registry architecture** is documented using:
 - **Business-readable concepts** (Goals, Outcomes, Capabilities…)
@@ -27,7 +26,7 @@ This enables:
 
 ---
 
-## Overview
+### Overview
 
 Business overview: 
 <!-- * Business Principle "Accessibility for Stakeholders" (PR001)
@@ -61,7 +60,7 @@ is _**assigned to**_ → Business Role "Data Steward" (BR002) -->
 
 
 
-## ✅ Goals
+#### Goals
 
 > Long-term strategic aims that guide the health system’s direction.
 
@@ -71,7 +70,7 @@ is _**assigned to**_ → Business Role "Data Steward" (BR002) -->
 
 ---
 
-## Outcomes
+#### Outcomes
 
 > Measurable results aligned with the stated goals.
 
@@ -81,7 +80,7 @@ is _**assigned to**_ → Business Role "Data Steward" (BR002) -->
 
 ---
 
-## 🧠 Capabilities
+#### Capabilities
 
 > High-level organizational abilities supported by people, processes, and technology.
 
@@ -91,7 +90,7 @@ is _**assigned to**_ → Business Role "Data Steward" (BR002) -->
 
 ---
 
-## Business Processes (Functions)
+#### Business Processes (Functions)
 
 > Coherent sets of business behavior that fulfill a capability.
 
@@ -103,7 +102,7 @@ is _**assigned to**_ → Business Role "Data Steward" (BR002) -->
 
 ---
 
-## 👤 Roles
+#### Roles
 
 > Responsibilities assigned to actors in the business.
 
@@ -113,7 +112,7 @@ is _**assigned to**_ → Business Role "Data Steward" (BR002) -->
 
 ---
 
-## 🧾 Business Concepts
+#### Business Concepts
 
 > Information objects important to the domain.
 
@@ -127,12 +126,12 @@ is _**assigned to**_ → Business Role "Data Steward" (BR002) -->
 
 ---
 
-## 🔧 Business View Diagram
+#### Business View Diagram
 
 This diagram shows the **key business functions and roles** in the Client Registry context using **ArchiMate** notation.
 
 <figure>
-  {% include l1-business-example.svg %}
+  {% include business-architecture-example.svg %}
 </figure>
 
 ---

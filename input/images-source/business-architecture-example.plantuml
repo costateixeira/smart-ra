@@ -2,6 +2,8 @@
 skinparam rectangle<<behavior>> {
   roundCorner 25
 }
+skinparam backgroundcolor transparent
+skinparam linestyle ortho
 
 sprite $bProcess jar:archimate/business-process
 sprite $bRole jar:archimate/business-role
@@ -12,31 +14,39 @@ sprite $bGoal jar:archimate/motivation-goal
 sprite $bPrinciple jar:archimate/principle
 
 ' Core Business Layer
+
+Package Processes {
 rectangle "[[# Register New Client\n(BP001)]]" as Reg <<$bProcess>><<behavior>> #Business
 rectangle "[[# Update Client Demographics\n(BP002)]]" as Update <<$bProcess>><<behavior>> #Business
 'rectangle "[[# Match Records\n(BP003)]]" as Match <<$bProcess>><<behavior>> #Business
 'rectangle "[[# Merge Records\n(BP004)]]" as Merge <<$bProcess>><<behavior>> #Business
+}
 
-Reg -r-> Update : follows
+Reg -r-> Update : "             follows          "
 'Update -down-> Match : triggers
 'Match -r-> Merge : triggers
 
 
 ' Roles
 'rectangle "[[# Registration Clerk\n(BR001)]]" as Clerk <<$bRole>> #Business
-rectangle "[[# Administrative HW\n(BR002)]]" as AdministrativeHW <<$bRole>> #Business
 
-AdministrativeHW -d-> Reg : performs
-AdministrativeHW -d-> Update : performs
+Package Roles {
+rectangle "[[# Administrative HW\n(BR002)]]" as AdministrativeHW <<$bRole>> #Business
+}
+
+AdministrativeHW -d-> Reg : "performs"
+AdministrativeHW -d-> Update : "performs"
 'Steward -u-> Match : performs
 'Steward -u-> Merge : performs
 
 ' Objects
+
+Package "Data Objects" {
 rectangle "[[# Demographic Data\n(BO002)]]" as Demographics <<$bObject>> #Business
 'rectangle "[[# Record Match\n(BO003)]]" as RecordMatch <<$bObject>> #Business
 'rectangle "[[# Merge Log\n(BO004)]]" as MergeLog <<$bObject>> #Business
 'Demographics -r[hidden]- RecordMatch
-
+}
 'Demographics -r[hidden]- RecordMatch
 
 Update -down-> Demographics : updates
@@ -44,8 +54,14 @@ Update -down-> Demographics : updates
 'Merge -down-> MergeLog : creates
 
 ' Function and Capability
+
+Package Functions {
 rectangle "[[# Client Registration & Search\n(F001)]]" as Function <<$bFunction>> #Business
-rectangle "[[# Patient Identity Management\n(C001)]]" as Capability <<$bCapability>> #Business
+}
+
+Package Capabilities {
+  rectangle "[[# Patient Identity Management\n(C001)]]" as Capability <<$bCapability>> #Business
+}
 
 Function -down-> Reg : realizes
 Function -down-> Update : realizes
@@ -55,11 +71,16 @@ Function -down-> Update : realizes
 Capability -down-> Function : supports
 
 ' Goal and Principle
-rectangle "[[# Business Goal G001\nEnsure Unique Patient ID]]" as Goal <<$bGoal>> #Business
+Package Goals {
+rectangle "[[# Ensure Unique Patient ID\n~[G001~]]]" as Goal <<$bGoal>> #Business
 'rectangle "[[# Accessibility for Stakeholders\n(PR001)]]" as Principle <<$bPrinciple>> #Business
+}
 
 Goal -down-> Capability : enables
 'Principle -right-> Goal : motivates
+
+
+AdministrativeHW -r[hidden]-> Function : "                                    "
 
 ' Legend
 legend left

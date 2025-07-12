@@ -1,5 +1,3 @@
-# Business Layer
-
 The **Business Layer** defines the strategic and operational foundations of an enterprise. It describes what the organization aims to achieve, how it organizes its operations, and which actors or roles carry out those operations. This layer is independent of technology and focuses on goals, responsibilities, processes, and capabilities.
 
 It serves as the foundation for aligning information systems and technology with the organization’s mission and value delivery.
@@ -21,6 +19,12 @@ These concerns are captured through key architectural concepts.
 
 ## Key Concepts
 
+
+<figure>
+  {% include business-architecture.svg %}
+</figure>
+
+
 ### Goal  
 A **long-term strategic aim** that guides the organization's direction.
 
@@ -40,13 +44,4 @@ A **responsibility or behavior** assigned to individuals, organizations, or syst
 An **informational concept** used in business processes, e.g., _order_, _client_, or _facility_.
 
 ---
-
-## Illustrative Example: Client Registry
-
-To make these concepts more concrete, the following example shows how they can be applied in the context of a **Client Registry**, which enables unique identification of patients across healthcare services.
-
-
-<figure>
-  {% include l1-business1.svg %}
-</figure>
 

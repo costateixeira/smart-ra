@@ -1,6 +1,6 @@
 @startuml
 skinparam linestyle polyline 
-
+skinparam backgroundcolor transparent
 skinparam rectangle<<behavior>> {
 	roundCorner 25
 }

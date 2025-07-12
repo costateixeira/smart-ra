@@ -1,9 +1,7 @@
 @startuml
-title Business Layer Metamodel
 
-'skinparam linestyle polyline 
+skinparam backgroundcolor transparent
 
-@startuml
 skinparam rectangle<<structure>> {
   roundCorner 25
 }
@@ -46,7 +44,7 @@ Role -left-> Function : performs
 Role -u-> Capability : supports
 Info -up-> Role : managed by
 
-legend left
+legend right
 Metamodel of Business Layer Concepts  
 based on TOGAF / ArchiMate core relationships
 ====
