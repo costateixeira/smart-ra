@@ -19,7 +19,7 @@ It connects the strategic business view to concrete technical implementations.
 ## Key Concepts
 
 <figure>
-  {% include functional-architecture-example.svg %}
+  {% include functional-architecture.svg %}
 </figure>
 
 ### Application Component
@@ -30,9 +30,6 @@ A **modular system unit** responsible for performing a set of related functions 
 
 A **discrete functionality** offered by an application component to support business processes.
 
-### Interface
-
-The **means of access** through which an application service is made available.
 
 
 

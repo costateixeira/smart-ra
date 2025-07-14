@@ -1,0 +1,33 @@
+@startuml
+skinparam backgroundcolor transparent
+skinparam rectangle<<type>> {
+  roundCorner 20
+  FontStyle bold
+}
+
+skinparam rectangle<<relation>> {
+  roundCorner 10
+  FontStyle normal
+}
+
+sprite $aComponent jar:archimate/application-component
+sprite $aService jar:archimate/application-service
+sprite $aInterface jar:archimate/application-interface
+
+title Functional Architecture Types
+
+' Define core functional types
+rectangle "[[$ Application Component]]" as AppComp <<$aComponent>><<type>> #Application
+rectangle "[[$ Application Service]]" as AppService <<$aService>><<type>> #Application
+rectangle "[[$ Interface]]" as Interface <<$aInterface>><<type>> #Application
+
+' Define relationships
+AppComp -down-> AppService : exposes
+AppService -down-> Interface : is accessed via
+
+legend left
+<$aComponent> : Application Component  
+<$aService> : Application Service  
+<$aInterface> : Interface (means of access)  
+endlegend
+@enduml
