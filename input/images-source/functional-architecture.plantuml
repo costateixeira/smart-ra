@@ -14,7 +14,6 @@ sprite $aComponent jar:archimate/application-component
 sprite $aService jar:archimate/application-service
 sprite $aInterface jar:archimate/application-interface
 
-title Functional Architecture Types
 
 ' Define core functional types
 rectangle "[[$ Application Component]]" as AppComp <<$aComponent>><<type>> #Application
