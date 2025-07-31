@@ -4,8 +4,8 @@ These are the core terms used in this specification. These are largely inspired 
 
 ## Business Layer
 
-### Principle
-> A normative statement that guides design or decision-making within an architecture. Principles are high-level rules or guidelines that reflect values, governance expectations, or desired outcomes.
+### Architecture Principle
+>  A normative statement that guides design or decision-making within an architecture. Principles are high-level rules or guidelines that are enduring and tied to the organization's mission, reflecting values, governance expectations, or desired outcomes.
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;_Examples:_  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- _"Ordering systems SHOULD be able to function offline and synchronize when reconnected."_  
@@ -25,7 +25,7 @@ These are the core terms used in this specification. These are largely inspired 
 ---
 
 ### Outcome
-> A measurable result aligned with a goal.
+> A measurable result aligned with a goal, often as a result or effect of a change.
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;_Examples:_  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- _"% of health facilities reporting zero essential stock-outs quarterly."_  
@@ -33,7 +33,7 @@ These are the core terms used in this specification. These are largely inspired 
 
 ---
 
-### Capability
+### Business Capability
 > A high-level ability of the organization to perform a specific task or achieve an outcome, supported by people, process, and tools.
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;_Examples:_  
@@ -42,8 +42,8 @@ These are the core terms used in this specification. These are largely inspired 
 
 ---
 
-### Function
-> A high-level grouping of business behavior performed to fulfill a capability.
+### Bunsiness Function
+> A unit of business capability at any level of granularity; a high-level grouping of business behavior performed to fulfill a capability.
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;_Examples:_  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- _"Inventory Monitoring"; "Traceability"_  
@@ -51,7 +51,17 @@ These are the core terms used in this specification. These are largely inspired 
 
 ---
 
-### Role
+### Business Process
+> A sequence of application-supported steps that automate or enable a business process.
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;_Examples:
+_  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- _"Submit Stock Report"; "Reorder Workflow"; "Order Fulfillment"_  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- _"Register New Client"; "Update Demographics"; "Client Matching / De-duplication"_
+
+---
+
+### Business Role
 > A business responsibility assigned to actors.
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;_Examples:_  
@@ -80,18 +90,8 @@ These are the core terms used in this specification. These are largely inspired 
 
 ---
 
-### Process
-> A sequence of application-supported steps that automate or enable a business process.
-
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;_Examples:
-_  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- _"Submit Stock Report"; "Reorder Workflow"; "Order Fulfillment"_  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- _"Register New Client"; "Update Demographics"; "Client Matching / De-duplication"_
-
----
-
-### Component
-> A modular software unit that provides specific functionality via interfaces.
+### Application Component
+> A modular software unit that provides specific functionality.
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;_Examples:_  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- _"Logistics Management Information System (LMIS)"; "Product Catalog Service"; "Patient Demographics Query (PDQ) Service"_  
