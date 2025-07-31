@@ -1,0 +1,494 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>Business layer - examples - Reference Architecture v0.2.0</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+    <link href="assets/css/fa-all.css" rel="stylesheet" type="text/css" />
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+    <link href="assets/css/who.css" rel="stylesheet"/>
+    <link href="assets/css/lforms.min.css" rel="stylesheet"/>
+
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="fhir-logo" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="fhir-logo" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="fhir-logo" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+
+    <style type="text/css">h2{--heading-prefix:"2.1"}
+    h3,h4,h5,h6{--heading-prefix:"2.1"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+
+      <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+        <div id="stripe"> </div>
+        <div class="container">  <!-- container -->
+          <!-- HEADER CONTENT -->
+  
+          <nav class="navbar navbar-inverse">
+            <!--status-bar-->
+            <div class="container">
+              <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+                <span class="icon-bar"> </span>
+                <span class="icon-bar"> </span>
+                <span class="icon-bar"> </span>
+              </button>
+              <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+              <div class="nav-collapse collapse navbar-inverse-collapse">
+                <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Home
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="index.html">Intro</a>
+      </li>
+      <li>
+        <a href="index.html">Scoping</a>
+      </li>
+      <li>
+        <a href="changes.html">Principles</a>
+      </li>
+      <li>
+        <a href="concepts.html">Concepts</a>
+      </li>
+      <li>
+        <a href="architects_guide.html">Architect&apos;s Guide</a>
+      </li>
+      <li>
+        <a href="methodology.html">Methodology</a>
+      </li>
+      <li>
+        <a href="governance.html">Governance</a>
+      </li>
+      <li>
+        <a href="references.html">References</a>
+      </li>
+      <li>
+        <a href="license.html">License</a>
+      </li>
+      <li>
+        <a href="changes.html">Changes</a>
+      </li>
+      <li>
+        <a href="dependencies.html">Dependencies</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Business
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="business-architecture.html">Business Architecture</a>
+      </li>
+      <li>
+        <a href="business-architecture-example.html">Business Architecture Examples</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Functional
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="functional-architecture.html">Functional Architecture</a>
+      </li>
+      <li>
+        <a href="functional-architecture-example.html">Functional Architecture Examples</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Technology
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="technology-architecture.html">Technology Architecture</a>
+      </li>
+      <li>
+        <a href="technology-architecture-example.html">Technology Architecture Examples</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Deployment
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="testing.html">Testing</a>
+      </li>
+      <li>
+        <a href="reference-implementations.html">Reference Implementations</a>
+      </li>
+      <li>
+        <a href="downloads.html">Downloads</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Indices
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="artifacts.html">Artifact Index</a>
+      </li>
+      <li>
+        <a href="maps.html">Mappings</a>
+      </li>
+    </ul>
+  </li>
+</ul>
+              </div>  <!-- /.nav-collapse -->
+
+              <div class="sf_colsIn col-md-8  navbar-right-container" data-sf-element="LanguageSelectorSearch" data-placeholder-label="Language Selector and Search" style="display: flex; justify-content: flex-end; align-items: center;">
+                <!-- This div will be pushed to the right -->
+                <div class="language-selector" style="margin-left: auto; background-color: #00477d; color: white;">
+                  <i class="fa fa-language fa-lg"></i>
+                  <label for="language-selector"> </label>
+                  <select onChange="openLink(value)" id="language-selector" name="language-selector">
+                    <option disabled selected>Select language</option>
+                    <option value="en" class="selected">English</option>
+                  </select>
+                  <i class="fas fa-angle-down"></i>
+                </div>
+                <!-- Search Content -->
+              </div>
+            </div>  <!-- /.container -->
+          </nav>  <!-- /.navbar -->
+        <!-- /HEADER CONTENT -->
+        </div>  <!-- /container -->
+      </div>  <!-- /segment-navbar -->
+      
+
+      <div class="container" style=" justify-content: space-between; align-items: left;">
+
+        <!-- Placeholder for child template header declarations -->
+<div id="project-nav">
+    <a id="who-logo" no-external="true" href="index.html">
+        
+    </a>
+</div>
+
+ <div id="family-nav">
+  <a id="fhir-logo" no-external="true" href="http://hl7.org/fhir">  </a>
+</div> 
+
+
+        <div id="ig-status" class="ig-status-draft">
+          <p><span style="font-size:12pt;font-weight:bold">Reference Architecture</span>
+            <br/>
+            <span style="display:inline-block;">0.2.0 - ci-build
+
+
+
+  <img alt="International flag" src="assets/images/001.svg" height="16" title="International"/>
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='business-architecture.html'><b>Business Architecture</b></a></li><li><b>Business layer - examples</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<style type="text/css">
+h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
+h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
+h4:before{color:silver;counter-increment:composite;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) " ";}
+h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";}
+h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
+</style>
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">Reference Architecture, published by WHO. This guide is not an authorized publication; it is the continuous build for version 0.2.0  built by the FHIR (HL7&reg; FHIR&reg; Standard) CI Build. This version is based on the current content of <a href='https://github.com/costateixeira/smart-ra/tree/glossary'>https://github.com/costateixeira/smart-ra/tree/glossary</a> and changes regularly. See the <a href='http://smart.who.int/ra/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
+  <h2>Business layer - examples</h2>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+    <p><!-- white space is critical inside of capture --></p>
+<div class="markdown-toc">
+<ul id="markdown-toc">
+  <li><a href="#methodology-note" id="markdown-toc-methodology-note">Methodology Note</a></li>
+  <li><a href="#overview" id="markdown-toc-overview">Overview</a></li>
+</ul>
+
+</div>
+
+<p>This page presents the <strong>Business Architecture</strong> for a national or regional <strong>Client Registry</strong>, a foundational capability for integrated, person-centered healthcare.</p>
+
+<p>It defines the key business goals, capabilities, processes, roles, and concepts using terminology aligned with <strong>ArchiMate</strong>, while remaining accessible to business audiences.</p>
+
+<blockquote>
+  <p><em>This model supports alignment with enterprise architecture frameworks such as TOGAF and reference models such as OpenHIE.</em></p>
+</blockquote>
+
+<hr />
+
+<p>This page serves as a <strong>business-readable entry point</strong> to the Client Registry Business architecture.</p>
+
+<hr />
+
+<h3 id="methodology-note">Methodology Note</h3>
+
+<p>The example <strong>Client Registry architecture</strong> is documented using:</p>
+<ul>
+  <li><strong>Business-readable concepts</strong> (Goals, Outcomes, Capabilities…)</li>
+  <li><strong>Narrative descriptions</strong></li>
+  <li><strong>ArchiMate notation for illustration</strong> (but based on structured, machine-readable internal format)</li>
+  <li><strong>Standards alignment</strong> (e.g. FHIR Patient, Identifier, Merge Operation)</li>
+</ul>
+
+<p>This enables:</p>
+<ul>
+  <li>Shared understanding across stakeholders of different levels.</li>
+  <li>Integration with digital health reference models and the overall Reference Architecture.</li>
+  <li>Traceability from strategic goals to technical specifications.</li>
+</ul>
+
+<hr />
+
+<h3 id="overview">Overview</h3>
+
+<p>Business overview: 
+<!-- * Business Principle "Accessibility for Stakeholders" (PR001)
+→ influences → Business Goal "Ensure unique patient identification" (G001) --></p>
+
+<ul>
+  <li>
+    <p>Business Goal "Ensure unique patient identification" (G001)<br />
+is <em><strong>realized by</strong></em> Business Capability "Patient Identity Management" (C001)</p>
+  </li>
+  <li>
+    <p>Business Capability "Patient Identity Management" (C001)<br />
+is <em><strong>realized</strong></em> by → Business Function "Client Registration and Search" (F001)</p>
+  </li>
+  <li>
+    <p>Business Function "Client Registration and Search" (F001)<br />
+is <em><strong>composed of</strong></em> → Business Process "Query by Identifier" (BP003)<br />
+is <em><strong>composed of</strong></em> → Business Process "Query by Demographics" (BP004)</p>
+  </li>
+  <li>
+    <p>Business Process "Register New Client" (BP001)<br />
+→ uses → Business Object "Client Identity" (BO001)<br />
+is <em><strong>assigned to</strong></em> → Business Role "Administrative Health Worker" (BR001)</p>
+  </li>
+  <li>
+    <p>Business Process "Update Client Demographics" (BP002)<br />
+→ uses → Business Object "Demographic Data" (BO002)<br />
+is <em><strong>assigned to</strong></em> → Business Role "Administrative Health Worker" (BR001)</p>
+  </li>
+</ul>
+
+<!-- * Business Process "Match Records" (BP003)  
+→ uses → Business Object "Record Match" (BO003)  
+is _**assigned to**_ → Business Role "Data Steward" (BR002)
+
+* Business Process "Merge Records" (BP004)  
+→ uses → Business Object "Merge Log" (BO004)  
+is _**assigned to**_ → Business Role "Data Steward" (BR002) -->
+
+<h4 id="goals">Goals</h4>
+
+<blockquote>
+  <p>Long-term strategic aims that guide the health system’s direction.</p>
+</blockquote>
+
+<p>       <em>Examples:</em><br />
+        - <em>"Goal001: Ensure unique and consistent identification of patients across all health services."</em><br />
+        - <em>"Goal002: Enable person-centered care by linking data across health encounters."</em></p>
+
+<hr />
+
+<h4 id="outcomes">Outcomes</h4>
+
+<blockquote>
+  <p>Measurable results aligned with the stated goals.</p>
+</blockquote>
+
+<p>       <em>Examples:</em><br />
+        - <em>"Out001 % of patient records correctly matched across systems"</em><br />
+        - <em>"Out002 Number of duplicate IDs merged per quarter"</em></p>
+
+<hr />
+
+<h4 id="capabilities">Capabilities</h4>
+
+<blockquote>
+  <p>High-level organizational abilities supported by people, processes, and technology.</p>
+</blockquote>
+
+<p>       <em>Examples:</em><br />
+        - <em>"Cap001 Patient Identity Management"</em><br />
+        - <em>"Cap002 Record Matching and Deduplication"</em></p>
+
+<hr />
+
+<h4 id="business-processes-functions">Business Processes (Functions)</h4>
+
+<blockquote>
+  <p>Coherent sets of business behavior that fulfill a capability.</p>
+</blockquote>
+
+<p>       <em>Examples:</em><br />
+        - <em>"BP001 Register New Client"</em><br />
+        - <em>"BP002 Update Client Demographics"</em><br />
+<!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- _"BP003 Perform Record Matching"_  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- _"BP004 Merge Duplicate Records"_   --></p>
+
+<hr />
+
+<h4 id="roles">Roles</h4>
+
+<blockquote>
+  <p>Responsibilities assigned to actors in the business.</p>
+</blockquote>
+
+<p>       <em>Examples:</em><br />
+        - <em>"BR001 Administrative Health Worker"</em><br />
+<!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- _"BP002 Client Registry Data Steward"_   --></p>
+
+<hr />
+
+<h4 id="business-concepts">Business Concepts</h4>
+
+<blockquote>
+  <p>Information objects important to the domain.</p>
+</blockquote>
+
+<p>       <em>Examples:</em></p>
+<ul>
+  <li><em>Client / Patient</em></li>
+  <li><em>Unique Identifier</em></li>
+  <li><em>Person Name</em></li>
+  <li><em>Date of Birth</em></li>
+  <li><em>Record Match Status</em><br />
+<!-- - _Merge Audit Trail_   --></li>
+</ul>
+
+<hr />
+
+<h4 id="business-view-diagram">Business View Diagram</h4>
+
+<p>This diagram shows the <strong>key business functions and roles</strong> in the Client Registry context using <strong>ArchiMate</strong> notation.</p>
+
+<figure>
+  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentStyleType="text/css" data-diagram-type="DESCRIPTION" height="942px" preserveAspectRatio="none" style="width:603px;height:942px;" version="1.1" viewBox="0 0 603 942" width="603px" zoomAndPan="magnify"><defs /><g><!--cluster Processes--><g class="cluster" data-entity="Processes" data-source-line="17" data-uid="ent0002" id="cluster_Processes"><path d="M8.5,510 L88.5713,510 A3.75,3.75 0 0 1 91.0713,512.5 L98.0713,532.2969 L592.5,532.2969 A2.5,2.5 0 0 1 595,534.7969 L595,626.5 A2.5,2.5 0 0 1 592.5,629 L8.5,629 A2.5,2.5 0 0 1 6,626.5 L6,512.5 A2.5,2.5 0 0 1 8.5,510" fill="none" style="stroke:#000000;stroke-width:1.5;" /><line style="stroke:#000000;stroke-width:1.5;" x1="6" x2="98.0713" y1="532.2969" y2="532.2969" /><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="79.0713" x="10" y="524.9951">Processes</text></g><!--cluster Roles--><g class="cluster" data-entity="Roles" data-source-line="32" data-uid="ent0006" id="cluster_Roles"><path d="M9.5,342 L53.5254,342 A3.75,3.75 0 0 1 56.0254,344.5 L63.0254,364.2969 L188.5,364.2969 A2.5,2.5 0 0 1 191,366.7969 L191,458.5 A2.5,2.5 0 0 1 188.5,461 L9.5,461 A2.5,2.5 0 0 1 7,458.5 L7,344.5 A2.5,2.5 0 0 1 9.5,342" fill="none" style="stroke:#000000;stroke-width:1.5;" /><line style="stroke:#000000;stroke-width:1.5;" x1="7" x2="63.0254" y1="364.2969" y2="364.2969" /><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="43.0254" x="11" y="356.9951">Roles</text></g><!--cluster Data Objects--><g class="cluster" data-entity="Data Objects" data-source-line="43" data-uid="ent0010" id="cluster_Data Objects"><path d="M378.5,678 L481.123,678 A3.75,3.75 0 0 1 483.623,680.5 L490.623,700.2969 L557.5,700.2969 A2.5,2.5 0 0 1 560,702.7969 L560,794.5 A2.5,2.5 0 0 1 557.5,797 L378.5,797 A2.5,2.5 0 0 1 376,794.5 L376,680.5 A2.5,2.5 0 0 1 378.5,678" fill="none" style="stroke:#000000;stroke-width:1.5;" /><line style="stroke:#000000;stroke-width:1.5;" x1="376" x2="490.623" y1="700.2969" y2="700.2969" /><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="101.623" x="380" y="692.9951">Data Objects</text></g><!--cluster Functions--><g class="cluster" data-entity="Functions" data-source-line="57" data-uid="ent0013" id="cluster_Functions"><path d="M345.5,342 L423.7051,342 A3.75,3.75 0 0 1 426.2051,344.5 L433.2051,364.2969 L590.5,364.2969 A2.5,2.5 0 0 1 593,366.7969 L593,458.5 A2.5,2.5 0 0 1 590.5,461 L345.5,461 A2.5,2.5 0 0 1 343,458.5 L343,344.5 A2.5,2.5 0 0 1 345.5,342" fill="none" style="stroke:#000000;stroke-width:1.5;" /><line style="stroke:#000000;stroke-width:1.5;" x1="343" x2="433.2051" y1="364.2969" y2="364.2969" /><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="77.2051" x="347" y="356.9951">Functions</text></g><!--cluster Capabilities--><g class="cluster" data-entity="Capabilities" data-source-line="61" data-uid="ent0015" id="cluster_Capabilities"><path d="M342.5,174 L436.4277,174 A3.75,3.75 0 0 1 438.9277,176.5 L445.9277,196.2969 L593.5,196.2969 A2.5,2.5 0 0 1 596,198.7969 L596,290.5 A2.5,2.5 0 0 1 593.5,293 L342.5,293 A2.5,2.5 0 0 1 340,290.5 L340,176.5 A2.5,2.5 0 0 1 342.5,174" fill="none" style="stroke:#000000;stroke-width:1.5;" /><line style="stroke:#000000;stroke-width:1.5;" x1="340" x2="445.9277" y1="196.2969" y2="196.2969" /><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="92.9277" x="344" y="188.9951">Capabilities</text></g><!--cluster Goals--><g class="cluster" data-entity="Goals" data-source-line="73" data-uid="ent0020" id="cluster_Goals"><path d="M357.5,6 L402.1885,6 A3.75,3.75 0 0 1 404.6885,8.5 L411.6885,28.2969 L578.5,28.2969 A2.5,2.5 0 0 1 581,30.7969 L581,122.5 A2.5,2.5 0 0 1 578.5,125 L357.5,125 A2.5,2.5 0 0 1 355,122.5 L355,8.5 A2.5,2.5 0 0 1 357.5,6" fill="none" style="stroke:#000000;stroke-width:1.5;" /><line style="stroke:#000000;stroke-width:1.5;" x1="355" x2="411.6885" y1="28.2969" y2="28.2969" /><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="43.6885" x="359" y="20.9951">Goals</text></g><!--entity Reg--><g class="entity" data-entity="Reg" data-source-line="18" data-uid="ent0003" id="entity_Reg"><rect fill="#FFFFCC" height="67.5938" rx="12.5" ry="12.5" style="stroke:#181818;stroke-width:0.5;" width="158.2363" x="22" y="545" /><image height="16" width="16" x="93.6182" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAATUlEQVR4XmNgGCrgH7oAqQBkAEWG/Pv/f+t/EI0uAQMwG3BikAH4DIErIAaD1FNkADZDSDIAXTPYAEIYn2ZiAMFYIARgLiEbUKR5kAMA7zW3iUrbg3kAAAAASUVORK5CYII=" y="555" /><a href="#" target="_top" title="#" xlink:actuate="onRequest" xlink:href="#" xlink:show="new" xlink:title="#" xlink:type="simple"><text fill="#0000FF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" text-decoration="underline" textLength="138.2363" x="32" y="582.9951">Register New Client</text></a><a href="#" target="_top" title="#" xlink:actuate="onRequest" xlink:href="#" xlink:show="new" xlink:title="#" xlink:type="simple"><text fill="#0000FF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" text-decoration="underline" textLength="55.6924" x="32" y="599.292">(BP001)</text></a></g><!--entity Update--><g class="entity" data-entity="Update" data-source-line="19" data-uid="ent0004" id="entity_Update"><rect fill="#FFFFCC" height="67.5938" rx="12.5" ry="12.5" style="stroke:#181818;stroke-width:0.5;" width="221.5918" x="357" y="545" /><image height="16" width="16" x="460.2959" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAATUlEQVR4XmNgGCrgH7oAqQBkAEWG/Pv/f+t/EI0uAQMwG3BikAH4DIErIAaD1FNkADZDSDIAXTPYAEIYn2ZiAMFYIARgLiEbUKR5kAMA7zW3iUrbg3kAAAAASUVORK5CYII=" y="555" /><a href="#" target="_top" title="#" xlink:actuate="onRequest" xlink:href="#" xlink:show="new" xlink:title="#" xlink:type="simple"><text fill="#0000FF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" text-decoration="underline" textLength="201.5918" x="367" y="582.9951">Update Client Demographics</text></a><a href="#" target="_top" title="#" xlink:actuate="onRequest" xlink:href="#" xlink:show="new" xlink:title="#" xlink:type="simple"><text fill="#0000FF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" text-decoration="underline" textLength="55.6924" x="367" y="599.292">(BP002)</text></a></g><!--entity AdministrativeHW--><g class="entity" data-entity="AdministrativeHW" data-source-line="33" data-uid="ent0007" id="entity_AdministrativeHW"><rect fill="#FFFFCC" height="67.5938" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="150.9697" x="23.5" y="377" /><image height="16" width="16" x="91.4849" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAARElEQVR4XmNgGHbgH5EYA4Al/v/f+h8XRpaHqUcxAF0DLs1ohpCnGd0QnAqINYAsQ5A1gw3ApghdA5pm3LFBBB4F1AQA5KwdoBiftUUAAAAASUVORK5CYII=" y="387" /><a href="#" target="_top" title="#" xlink:actuate="onRequest" xlink:href="#" xlink:show="new" xlink:title="#" xlink:type="simple"><text fill="#0000FF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" text-decoration="underline" textLength="130.9697" x="33.5" y="414.9951">Administrative HW</text></a><a href="#" target="_top" title="#" xlink:actuate="onRequest" xlink:href="#" xlink:show="new" xlink:title="#" xlink:type="simple"><text fill="#0000FF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" text-decoration="underline" textLength="56.9775" x="33.5" y="431.292">(BR002)</text></a></g><!--entity Demographics--><g class="entity" data-entity="Demographics" data-source-line="44" data-uid="ent0011" id="entity_Demographics"><rect fill="#FFFFCC" height="67.5938" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="152.043" x="392" y="713" /><image height="16" width="16" x="460.5215" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAALklEQVR4XmNgGEzgHxkYBfz7/3/rf2IxbQwgA6MAyl2ArggfHjWAVgaQgQcBAAC8+aZ0EXbqwQAAAABJRU5ErkJggg==" y="723" /><a href="#" target="_top" title="#" xlink:actuate="onRequest" xlink:href="#" xlink:show="new" xlink:title="#" xlink:type="simple"><text fill="#0000FF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" text-decoration="underline" textLength="132.043" x="402" y="750.9951">Demographic Data</text></a><a href="#" target="_top" title="#" xlink:actuate="onRequest" xlink:href="#" xlink:show="new" xlink:title="#" xlink:type="simple"><text fill="#0000FF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" text-decoration="underline" textLength="58.2695" x="402" y="767.292">(BO002)</text></a></g><!--entity Function--><g class="entity" data-entity="Function" data-source-line="58" data-uid="ent0014" id="entity_Function"><rect fill="#FFFFCC" height="67.5938" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="218.2559" x="359" y="377" /><image height="16" width="16" x="460.6279" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAY0lEQVR4XrWSSw7AIAhEuf99ej1paLQfhBlY9CXGOL9NK4IZXugwVA+12xsVrvI69vYBxKfcHQnL1RFYZiOlMhr5ZwDpdOAVQt4N++7MfwKROYGZ6m+b5kzYxIQwuwmEbj7nBOFPREpY0CklAAAAAElFTkSuQmCC" y="387" /><a href="#" target="_top" title="#" xlink:actuate="onRequest" xlink:href="#" xlink:show="new" xlink:title="#" xlink:type="simple"><text fill="#0000FF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" text-decoration="underline" textLength="198.2559" x="369" y="414.9951">Client Registration &amp; Search</text></a><a href="#" target="_top" title="#" xlink:actuate="onRequest" xlink:href="#" xlink:show="new" xlink:title="#" xlink:type="simple"><text fill="#0000FF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" text-decoration="underline" textLength="45.6982" x="369" y="431.292">(F001)</text></a></g><!--entity Capability--><g class="entity" data-entity="Capability" data-source-line="62" data-uid="ent0016" id="entity_Capability"><rect fill="#FFFFCC" height="67.5938" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="224.1553" x="356" y="209" /><image height="16" width="16" x="460.5776" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAUElEQVR4XmNgIB78w4GJBv++3lv1HxmDxNAV4QNDzAD0gMKHsQKstmETQ9cIA1gVYxND1wgDWBVjE0PXCANYFWMTAyumEGM3mVix4WIAJRgAFyCi5v7dvaAAAAAASUVORK5CYII=" y="219" /><a href="#" target="_top" title="#" xlink:actuate="onRequest" xlink:href="#" xlink:show="new" xlink:title="#" xlink:type="simple"><text fill="#0000FF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" text-decoration="underline" textLength="204.1553" x="366" y="246.9951">Patient Identity Management</text></a><a href="#" target="_top" title="#" xlink:actuate="onRequest" xlink:href="#" xlink:show="new" xlink:title="#" xlink:type="simple"><text fill="#0000FF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" text-decoration="underline" textLength="47.4209" x="366" y="263.292">(C001)</text></a></g><!--entity Goal--><g class="entity" data-entity="Goal" data-source-line="74" data-uid="ent0021" id="entity_Goal"><rect fill="#FFFFCC" height="67.5938" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="195.2734" x="370.5" y="41" /><image height="16" width="16" x="460.6367" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAdElEQVR4Xq2SAQ7AIAgD/f/bfJMajGxYC7Jkl5AItmVbVopPM/WJaaq1dy2dgY6yGbHkHg0WbyubHxyiWw/+V4BiNpdzyhz1NoQGLMH2DfAcBtx6GxCGsDmaBXeT14N/wkTp/0Chj581K97WlNnyvAJe/MoAdTqU1kiehc8AAAAASUVORK5CYII=" y="51" /><a href="#" target="_top" title="#" xlink:actuate="onRequest" xlink:href="#" xlink:show="new" xlink:title="#" xlink:type="simple"><text fill="#0000FF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" text-decoration="underline" textLength="175.2734" x="380.5" y="78.9951">Ensure Unique Patient ID</text></a><a href="#" target="_top" title="#" xlink:actuate="onRequest" xlink:href="#" xlink:show="new" xlink:title="#" xlink:type="simple"><text fill="#0000FF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" text-decoration="underline" textLength="48.4941" x="380.5" y="95.292">[G001]</text></a></g><!--link Reg to Update--><g class="link" data-entity-1="Reg" data-entity-2="Update" data-source-line="24" data-uid="lnk5" id="link_Reg_Update"><path d="M180.18,579 C231.81,579 293.93,579 350.94,579" fill="none" id="Reg-to-Update" style="stroke:#181818;stroke-width:1;" /><polygon fill="#181818" points="356.94,579,347.94,575,351.94,579,347.94,583,356.94,579" style="stroke:#181818;stroke-width:1;" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="45.1128" x="252.2202" y="572.0669">follows</text></g><!--link AdministrativeHW to Reg--><g class="link" data-entity-1="AdministrativeHW" data-entity-2="Reg" data-source-line="36" data-uid="lnk8" id="link_AdministrativeHW_Reg"><path d="M99.4,445.19 C99.75,474.15 100.1774,509.9304 100.5274,538.8604" fill="none" id="AdministrativeHW-to-Reg" style="stroke:#181818;stroke-width:1;" /><polygon fill="#181818" points="100.6,544.86,104.4908,535.8123,100.5395,539.8604,96.4914,535.909,100.6,544.86" style="stroke:#181818;stroke-width:1;" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="58.9063" x="101" y="490.0669">performs</text></g><!--link AdministrativeHW to Update--><g class="link" data-entity-1="AdministrativeHW" data-entity-2="Update" data-source-line="37" data-uid="lnk9" id="link_AdministrativeHW_Update"><path d="M141.4,445.2 C163.61,461.47 191.79,480.44 219,494 C262.49,515.68 307.156,532.0512 351.196,545.8912" fill="none" id="AdministrativeHW-to-Update" style="stroke:#181818;stroke-width:1;" /><polygon fill="#181818" points="356.92,547.69,349.5332,541.1758,352.15,546.191,347.1348,548.8078,356.92,547.69" style="stroke:#181818;stroke-width:1;" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="58.9063" x="220" y="490.0669">performs</text></g><!--link Update to Demographics--><g class="link" data-entity-1="Update" data-entity-2="Demographics" data-source-line="51" data-uid="lnk12" id="link_Update_Demographics"><path d="M468,613.19 C468,642.15 468,677.93 468,706.86" fill="none" id="Update-to-Demographics" style="stroke:#181818;stroke-width:1;" /><polygon fill="#181818" points="468,712.86,472,703.86,468,707.86,464,703.86,468,712.86" style="stroke:#181818;stroke-width:1;" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="52.5776" x="469" y="658.0669">updates</text></g><!--link Function to Reg--><g class="link" data-entity-1="Function" data-entity-2="Reg" data-source-line="65" data-uid="lnk17" id="link_Function_Reg"><path d="M394.91,445.14 C361.95,460.07 322.52,477.93 287,494 C249.87,510.79 214.0384,526.9809 179.7984,542.4409" fill="none" id="Function-to-Reg" style="stroke:#181818;stroke-width:1;" /><polygon fill="#181818" points="174.33,544.91,184.1787,544.852,178.887,542.8524,180.8866,537.5608,174.33,544.91" style="stroke:#181818;stroke-width:1;" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="50.1274" x="322" y="490.0669">realizes</text></g><!--link Function to Update--><g class="link" data-entity-1="Function" data-entity-2="Update" data-source-line="66" data-uid="lnk18" id="link_Function_Update"><path d="M468,445.19 C468,474.15 468,509.93 468,538.86" fill="none" id="Function-to-Update" style="stroke:#181818;stroke-width:1;" /><polygon fill="#181818" points="468,544.86,472,535.86,468,539.86,464,535.86,468,544.86" style="stroke:#181818;stroke-width:1;" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="50.1274" x="469" y="490.0669">realizes</text></g><!--link Capability to Function--><g class="link" data-entity-1="Capability" data-entity-2="Function" data-source-line="70" data-uid="lnk19" id="link_Capability_Function"><path d="M468,277.19 C468,306.15 468,341.93 468,370.86" fill="none" id="Capability-to-Function" style="stroke:#181818;stroke-width:1;" /><polygon fill="#181818" points="468,376.86,472,367.86,468,371.86,464,367.86,468,376.86" style="stroke:#181818;stroke-width:1;" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="56.6846" x="469" y="322.0669">supports</text></g><!--link Goal to Capability--><g class="link" data-entity-1="Goal" data-entity-2="Capability" data-source-line="78" data-uid="lnk22" id="link_Goal_Capability"><path d="M468,109.19 C468,138.15 468,173.93 468,202.86" fill="none" id="Goal-to-Capability" style="stroke:#181818;stroke-width:1;" /><polygon fill="#181818" points="468,208.86,472,199.86,468,203.86,464,199.86,468,208.86" style="stroke:#181818;stroke-width:1;" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="50.8384" x="469" y="154.0669">enables</text></g><!--link AdministrativeHW to Function--><rect fill="none" height="107.7813" rx="7.5" ry="7.5" style="stroke:#000000;stroke-width:1;" width="183.8535" x="12" y="815" /><image height="16" width="16" x="17" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAdElEQVR4Xq2SAQ7AIAgD/f/bfJMajGxYC7Jkl5AItmVbVopPM/WJaaq1dy2dgY6yGbHkHg0WbyubHxyiWw/+V4BiNpdzyhz1NoQGLMH2DfAcBtx6GxCGsDmaBXeT14N/wkTp/0Chj581K97WlNnyvAJe/MoAdTqU1kiehc8AAAAASUVORK5CYII=" y="821.2969" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="107.2354" x="36.4502" y="832.9951">: Business Goal</text><image height="16" width="16" x="17" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAUElEQVR4XmNgIB78w4GJBv++3lv1HxmDxNAV4QNDzAD0gMKHsQKstmETQ9cIA1gVYxND1wgDWBVjE0PXCANYFWMTAyumEGM3mVix4WIAJRgAFyCi5v7dvaAAAAAASUVORK5CYII=" y="837.5938" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="145.5029" x="36.4502" y="849.292">: Business Capability</text><image height="16" width="16" x="17" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAY0lEQVR4XrWSSw7AIAhEuf99ej1paLQfhBlY9CXGOL9NK4IZXugwVA+12xsVrvI69vYBxKfcHQnL1RFYZiOlMhr5ZwDpdOAVQt4N++7MfwKROYGZ6m+b5kzYxIQwuwmEbj7nBOFPREpY0CklAAAAAElFTkSuQmCC" y="853.8906" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="135.666" x="36.4502" y="865.5889">: Business Function</text><image height="16" width="16" x="17" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAATUlEQVR4XmNgGCrgH7oAqQBkAEWG/Pv/f+t/EI0uAQMwG3BikAH4DIErIAaD1FNkADZDSDIAXTPYAEIYn2ZiAMFYIARgLiEbUKR5kAMA7zW3iUrbg3kAAAAASUVORK5CYII=" y="870.1875" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="129.0146" x="36.4502" y="881.8857">: Business Process</text><image height="16" width="16" x="17" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAARElEQVR4XmNgGHbgH5EYA4Al/v/f+h8XRpaHqUcxAF0DLs1ohpCnGd0QnAqINYAsQ5A1gw3ApghdA5pm3LFBBB4F1AQA5KwdoBiftUUAAAAASUVORK5CYII=" y="886.4844" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="106.1484" x="36.4502" y="898.1826">: Business Role</text><image height="16" width="16" x="17" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAALklEQVR4XmNgGEzgHxkYBfz7/3/rf2IxbQwgA6MAyl2ArggfHjWAVgaQgQcBAAC8+aZ0EXbqwQAAAABJRU5ErkJggg==" y="902.7813" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="120.9482" x="36.4502" y="914.4795">: Business Object</text></g></svg>
+</figure>
+
+<hr />
+
+
+
+
+</div>
+</div>  <!-- /inner-wrapper -->
+</div>  <!-- /row -->
+</div>  <!-- /container -->
+</div>  <!-- /segment-content -->
+
+<script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+<script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+<script type="text/javascript" src="assets/js/window-hash.js"> </script>
+<a name="bottom"> </a>
+<div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+<div class="container">  <!-- container -->
+
+<div class="inner-wrapper">
+  <p>
+    IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="http://who.int">WHO</a>.  Package smart.who.int.ra#0.2.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Jul 31, 2025 10:50+0000">2025-07-31</span>
+    <br/>
+    <span style="color: var(--footer-highlight-text-color)">
+                Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+| <a style="color: #81BEF7" target="_blank" href="http://smart.who.int/ra/history.html">Version History</a> | <a style="color: #81BEF7" rel="license" href="license.html">License</a>
+    </span>
+  </p>
+</div>  <!-- /inner-wrapper -->
+</div>  <!-- /container -->
+</div>  <!-- /segment-footer -->
+
+<div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+<div class="container">  <!-- container -->
+</div>  <!-- /container -->
+</div>  <!-- /segment-post-footer -->
+
+<!-- JS and analytics only. -->
+<!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+<script type="text/javascript" src="assets/js/respond.min.js"> </script>
+<script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+<script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+<script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+<script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
+<!-- Analytics Below
+================================================== -->
+
+
+
+
