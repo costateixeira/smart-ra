@@ -5,13 +5,6 @@ Some examples are provided for clarity.
 
 ## Business Layer
 
-
-### Goal
-
----
-
-### Outcome
-
 ---
 
 ### Business Capability
@@ -27,7 +20,7 @@ Some examples are provided for clarity.
 > A collection of business behavior based on a chosen set of criteria, closely aligned to an organization.
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;_Examples:_  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- _"IManaging Workforce Identity"_  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- _"Managing Workforce Identity"_  
 
 ---
 
@@ -50,45 +43,5 @@ An end-to-end stakeholder journey that delivers value across multiple business c
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- _"Register and Deploy a Qualified Health Worker"_  
 
 
-
----
-
-### Business Role
-
----
-
-## Application Layer
-
-### Requirement
-
----
-
-### Application Component
-
----
-
-### Data Structure (Logical Model)
-
-
----
-
-## Technology Layer
-
-### Technical Requirement
-
----
-
-### Data Specification
-
----
-
-## Information Layer (Healthcare-specific)
-
-### Vocabulary / Terminology
-
-
-### Business Object (Information)
-
----
 
 ---
