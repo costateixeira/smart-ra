@@ -1,0 +1,56 @@
+items:
+  - type: goal
+    id: BG-01
+    type_display: Business Goal
+    title: Ensure Unique Patient Identification
+    description: >
+      Ensures unique ID. Depends on AC-01; interacts with BP-01.
+    # Explicit typed relationships (Business + Application)
+    business_relations:
+      - type: realized by
+        id: BP-01
+        label: Patient Registration
+      - type: influenced by
+        id: BP-02
+        label: Identity Verification
+    application_relations:
+      - type: implemented by
+        id: AC-01
+        label: Master Patient Index
+
+  - type: process
+    id: BP-01
+    type_display: Business Process
+    title: Patient Registration
+    description: Captures demographics and identifiers.
+    business_relations:
+      - type: contributes to
+        id: BG-01
+        label: Unique Patient Identification
+    application_relations:
+      - type: served by
+        id: AC-01
+        label: Master Patient Index
+
+  - type: process
+    id: BP-02
+    type_display: Business Process
+    title: Identity Verification
+    description: Verifies identity credentials.
+    business_relations:
+      - type: contributes to
+        id: BG-01
+        label: Unique Patient Identification
+
+  - type: component
+    id: AC-01
+    type_display: Application Component
+    title: Master Patient Index
+    description: Assigns and manages patient identifiers.
+    business_relations:
+      - type: supports
+        id: BP-01
+        label: Patient Registration
+      - type: influences
+        id: BG-01
+        label: Unique Patient Identification
