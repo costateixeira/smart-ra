@@ -1,0 +1,15 @@
+<archimate:Goal
+    xmlns:archimate="http://www.archimatetool.com/archimate"
+    name="Goal"
+    id="id-b48ceb1c6ca14f96a3bef658a99f0c3f"
+    documentation="A high-level statement of intent, direction, or desired state for an organization and its stakeholders. &#xD;&#xA;Goals are expressed qualitatively, and can represent anything a stakeholder may desire, such as a state of affairs, or a produced value.  Goals define direction and intention, and may be broken into smaller sub-goals or linked to measurable outcomes. &#xD;&#xA;Goals are typically used to measure success of an organization and it is common to associate concrete outcomes with goals. &#xD;&#xA;&#xD;&#xA;Examples:&#xD;&#xA;* Universal access to personal health records&#xD;&#xA;* Optimize Supply Chain Management&#xD;&#xA;* Enhance Climate Resilience with Predictive Capabilities&#xD;&#xA;">
+  <properties
+      key="Definition"
+      value="A high-level statement of intent, direction, or desired state for an organization and its stakeholders. "/>
+  <properties
+      key="Description"
+      value="Goals are expressed qualitatively, and can represent anything a stakeholder may desire, such as a state of affairs, or a produced value.  Goals define direction and intention, and may be broken into smaller sub-goals or linked to measurable outcomes. \\Goals are typically used to measure success of an organization and it is common to associate concrete outcomes with goals. "/>
+  <properties
+      key="Example"
+      value="* Universal access to personal health records\* Optimize Supply Chain Management\* Enhance Climate Resilience with Predictive Capabilities"/>
+</archimate:Goal>

@@ -1,0 +1,15 @@
+<archimate:Outcome
+    xmlns:archimate="http://www.archimatetool.com/archimate"
+    name="Outcome"
+    id="id-5ac6762fae6c4cfc863c6ad5f8006078"
+    documentation="An end result, effect, or consequence of a certain state of affairs. &#xD;&#xA;A Business Outcome is what is actually achieved by implementing capabilities—it is the tangible, often measurable result. Outcomes are frequently tied to KPIs and may be time-bound. Outcomes can also be used to model potentially unwanted effects; for example, in order to design appropriate mitigating measures.&#xD;&#xA;For example, “80% of citizens issued with a verifiable health record” or “90% of adverse events reported within 24 hours”. Outcomes demonstrate whether the architecture is delivering on its goals.&#xD;&#xA;">
+  <properties
+      key="Definition"
+      value="An end result, effect, or consequence of a certain state of affairs. "/>
+  <properties
+      key="Description"
+      value="A Business Outcome is what is actually achieved by implementing capabilities—it is the tangible, often measurable result. Outcomes are frequently tied to KPIs and may be time-bound. Outcomes can also be used to model potentially unwanted effects; for example, in order to design appropriate mitigating measures."/>
+  <properties
+      key="Example"
+      value="“80% of citizens issued with a verifiable health record” or “90% of adverse events reported within 24 hours”. Outcomes demonstrate whether the architecture is delivering on its goals."/>
+</archimate:Outcome>

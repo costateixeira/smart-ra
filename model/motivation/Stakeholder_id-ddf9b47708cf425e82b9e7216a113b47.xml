@@ -1,0 +1,12 @@
+<archimate:Stakeholder
+    xmlns:archimate="http://www.archimatetool.com/archimate"
+    name="Stakeholder"
+    id="id-ddf9b47708cf425e82b9e7216a113b47"
+    documentation="An individual, role, or organization with an interest in the outcomes of the architecture. &#xD;&#xA;&#xD;&#xA;Stakeholders set or influence goals and are linked to the values they expect to receive. &#xD;&#xA;Typical stakeholders in healthcare include patients and other health service users, health workers, facilities, regulators, public health agencies and international agencies. &#xD;&#xA;">
+  <properties
+      key="Definition"
+      value="An individual, role, or organization with an interest in the outcomes of the architecture. "/>
+  <properties
+      key="Description"
+      value="Stakeholders set or influence goals and are linked to the values they expect to receive. Typical stakeholders in healthcare include patients and other health service users, health workers, facilities, regulators, public health agencies and international agencies. "/>
+</archimate:Stakeholder>

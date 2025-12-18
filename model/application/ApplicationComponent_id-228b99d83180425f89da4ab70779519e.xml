@@ -1,0 +1,15 @@
+<archimate:ApplicationComponent
+    xmlns:archimate="http://www.archimatetool.com/archimate"
+    name="Application Component"
+    id="id-228b99d83180425f89da4ab70779519e"
+    documentation="The deployed IT system that provides the functionality. &#xD;&#xA;&#xD;&#xA;Components encapsulate logic and data, and expose their behavior through services. They are modular, replaceable, and reusable. &#xD;&#xA;&#xD;&#xA;For example, the Client Registry, Interoperability Middleware, or Terminology Serviceer are application components within DPI-H.&#xD;&#xA;">
+  <properties
+      key="Definition"
+      value="The deployed IT system that provides the functionality. "/>
+  <properties
+      key="Description"
+      value="Components encapsulate logic and data, and expose their behavior through services. They are modular, replaceable, and reusable. "/>
+  <properties
+      key="Example"
+      value="Client Registry, Interoperability Middleware, or Terminology Serviceer are application components within DPI-H."/>
+</archimate:ApplicationComponent>

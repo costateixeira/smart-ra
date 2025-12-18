@@ -1,0 +1,15 @@
+<archimate:Value
+    xmlns:archimate="http://www.archimatetool.com/archimate"
+    name="Value"
+    id="id-87615fccf39d4c26a648fe4a006e561d"
+    documentation="The benefit or utility gained by a stakeholder from using a service, product, or capability.&#xD;&#xA;Value captures why a goal or capability matters and who benefits. Value can be monetary, but in health contexts it often reflects non-monetary benefits such as trust, usability, or equity. &#xD;&#xA;For example, a citizen values secure access to their data, while a health worker values having a complete clinical history at the point of care.&#xD;&#xA;">
+  <properties
+      key="Definition"
+      value="The benefit or utility gained by a stakeholder from using a service, product, or capability."/>
+  <properties
+      key="Description"
+      value="Value captures why a goal or capability matters and who benefits. Value can be monetary, but in health contexts it often reflects non-monetary benefits such as trust, usability, or equity. "/>
+  <properties
+      key="Example"
+      value="A citizen values secure access to their data, while a health worker values having a complete clinical history at the point of care."/>
+</archimate:Value>
