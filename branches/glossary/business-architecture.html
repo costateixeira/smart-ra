@@ -1,0 +1,385 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>Business Architecture - Reference Architecture v0.2.0</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+    <link href="assets/css/fa-all.css" rel="stylesheet" type="text/css" />
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+    <link href="assets/css/who.css" rel="stylesheet"/>
+    <link href="assets/css/lforms.min.css" rel="stylesheet"/>
+
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="fhir-logo" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="fhir-logo" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="fhir-logo" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+
+    <style type="text/css">h2{--heading-prefix:"2"}
+    h3,h4,h5,h6{--heading-prefix:"2.0"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+
+      <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+        <div id="stripe"> </div>
+        <div class="container">  <!-- container -->
+          <!-- HEADER CONTENT -->
+  
+          <nav class="navbar navbar-inverse">
+            <!--status-bar-->
+            <div class="container">
+              <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+                <span class="icon-bar"> </span>
+                <span class="icon-bar"> </span>
+                <span class="icon-bar"> </span>
+              </button>
+              <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+              <div class="nav-collapse collapse navbar-inverse-collapse">
+                <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Home
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="index.html">Intro</a>
+      </li>
+      <li>
+        <a href="index.html">Scoping</a>
+      </li>
+      <li>
+        <a href="changes.html">Principles</a>
+      </li>
+      <li>
+        <a href="concepts.html">Concepts</a>
+      </li>
+      <li>
+        <a href="architects_guide.html">Architect&apos;s Guide</a>
+      </li>
+      <li>
+        <a href="methodology.html">Methodology</a>
+      </li>
+      <li>
+        <a href="governance.html">Governance</a>
+      </li>
+      <li>
+        <a href="references.html">References</a>
+      </li>
+      <li>
+        <a href="license.html">License</a>
+      </li>
+      <li>
+        <a href="changes.html">Changes</a>
+      </li>
+      <li>
+        <a href="dependencies.html">Dependencies</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Business
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="business-architecture.html">Business Architecture</a>
+      </li>
+      <li>
+        <a href="business-architecture-example.html">Business Architecture Examples</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Functional
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="functional-architecture.html">Functional Architecture</a>
+      </li>
+      <li>
+        <a href="functional-architecture-example.html">Functional Architecture Examples</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Technology
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="technology-architecture.html">Technology Architecture</a>
+      </li>
+      <li>
+        <a href="technology-architecture-example.html">Technology Architecture Examples</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Deployment
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="testing.html">Testing</a>
+      </li>
+      <li>
+        <a href="reference-implementations.html">Reference Implementations</a>
+      </li>
+      <li>
+        <a href="downloads.html">Downloads</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Indices
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="artifacts.html">Artifact Index</a>
+      </li>
+      <li>
+        <a href="maps.html">Mappings</a>
+      </li>
+    </ul>
+  </li>
+</ul>
+              </div>  <!-- /.nav-collapse -->
+
+              <div class="sf_colsIn col-md-8  navbar-right-container" data-sf-element="LanguageSelectorSearch" data-placeholder-label="Language Selector and Search" style="display: flex; justify-content: flex-end; align-items: center;">
+                <!-- This div will be pushed to the right -->
+                <div class="language-selector" style="margin-left: auto; background-color: #00477d; color: white;">
+                  <i class="fa fa-language fa-lg"></i>
+                  <label for="language-selector"> </label>
+                  <select onChange="openLink(value)" id="language-selector" name="language-selector">
+                    <option disabled selected>Select language</option>
+                    <option value="en" class="selected">English</option>
+                  </select>
+                  <i class="fas fa-angle-down"></i>
+                </div>
+                <!-- Search Content -->
+              </div>
+            </div>  <!-- /.container -->
+          </nav>  <!-- /.navbar -->
+        <!-- /HEADER CONTENT -->
+        </div>  <!-- /container -->
+      </div>  <!-- /segment-navbar -->
+      
+
+      <div class="container" style=" justify-content: space-between; align-items: left;">
+
+        <!-- Placeholder for child template header declarations -->
+<div id="project-nav">
+    <a id="who-logo" no-external="true" href="index.html">
+        
+    </a>
+</div>
+
+ <div id="family-nav">
+  <a id="fhir-logo" no-external="true" href="http://hl7.org/fhir">  </a>
+</div> 
+
+
+        <div id="ig-status" class="ig-status-draft">
+          <p><span style="font-size:12pt;font-weight:bold">Reference Architecture</span>
+            <br/>
+            <span style="display:inline-block;">0.2.0 - ci-build
+
+
+
+  <img alt="International flag" src="assets/images/001.svg" height="16" title="International"/>
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><b>Business Architecture</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<style type="text/css">
+h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
+h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
+h4:before{color:silver;counter-increment:composite;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) " ";}
+h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";}
+h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
+</style>
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">Reference Architecture, published by WHO. This guide is not an authorized publication; it is the continuous build for version 0.2.0  built by the FHIR (HL7&reg; FHIR&reg; Standard) CI Build. This version is based on the current content of <a href='https://github.com/costateixeira/smart-ra/tree/glossary'>https://github.com/costateixeira/smart-ra/tree/glossary</a> and changes regularly. See the <a href='http://smart.who.int/ra/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
+  <h2>Business Architecture</h2>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+    <p><!-- white space is critical inside of capture --></p>
+<div class="markdown-toc">
+<ul id="markdown-toc">
+  <li><a href="#purpose" id="markdown-toc-purpose">Purpose</a></li>
+  <li><a href="#key-concepts" id="markdown-toc-key-concepts">Key Concepts</a>    <ul>
+      <li><a href="#goal" id="markdown-toc-goal">Goal</a></li>
+      <li><a href="#outcome" id="markdown-toc-outcome">Outcome</a></li>
+      <li><a href="#capability" id="markdown-toc-capability">Capability</a></li>
+      <li><a href="#function" id="markdown-toc-function">Function</a></li>
+      <li><a href="#role" id="markdown-toc-role">Role</a></li>
+      <li><a href="#business-object" id="markdown-toc-business-object">Business Object</a></li>
+    </ul>
+  </li>
+</ul>
+
+</div>
+<p>The <strong>Business Layer</strong> defines the strategic and operational foundations of an enterprise. It describes what the organization aims to achieve, how it organizes its operations, and which actors or roles carry out those operations. This layer is independent of technology and focuses on goals, responsibilities, processes, and capabilities.</p>
+
+<p>It serves as the foundation for aligning information systems and technology with the organization’s mission and value delivery.</p>
+
+<hr />
+
+<h2 id="purpose">Purpose</h2>
+
+<p>The Business Layer answers the questions:</p>
+
+<ul>
+  <li><strong>Why</strong> does the organization exist?</li>
+  <li><strong>What</strong> does it want to achieve?</li>
+  <li><strong>How</strong> does it operate to achieve that?</li>
+  <li><strong>Who</strong> is involved in those operations?</li>
+</ul>
+
+<p>These concerns are captured through key architectural concepts.</p>
+
+<hr />
+
+<h2 id="key-concepts">Key Concepts</h2>
+
+<figure>
+  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentStyleType="text/css" data-diagram-type="DESCRIPTION" height="645px" preserveAspectRatio="none" style="width:419px;height:645px;" version="1.1" viewBox="0 0 419 645" width="419px" zoomAndPan="magnify"><defs /><g><!--entity Principle--><g class="entity" data-entity="Principle" data-source-line="28" data-uid="ent0002" id="entity_Principle"><rect fill="#FFFFCC" height="51.2969" rx="12.5" ry="12.5" style="stroke:#181818;stroke-width:0.5;" width="79.9375" x="7" y="7" /><image height="16" width="16" x="39.4688" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAOklEQVR4XmNgoDL4RyTGCnBKYAFY1WITxGUjNjGsgqMGDAYDcAGsarEJUuwCig3ABXCqhdlICFMPAADlsz2F3kTS7gAAAABJRU5ErkJggg==" y="17" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="59.9375" x="17" y="44.9951">Principle</text></g><!--entity Goal--><g class="entity" data-entity="Goal" data-source-line="29" data-uid="ent0003" id="entity_Goal"><rect fill="#FFFFCC" height="51.2969" rx="12.5" ry="12.5" style="stroke:#181818;stroke-width:0.5;" width="51.8828" x="190" y="7" /><image height="16" width="16" x="208.4414" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAdElEQVR4Xq2SAQ7AIAgD/f/bfJMajGxYC7Jkl5AItmVbVopPM/WJaaq1dy2dgY6yGbHkHg0WbyubHxyiWw/+V4BiNpdzyhz1NoQGLMH2DfAcBtx6GxCGsDmaBXeT14N/wkTp/0Chj581K97WlNnyvAJe/MoAdTqU1kiehc8AAAAASUVORK5CYII=" y="17" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="31.8828" x="200" y="44.9951">Goal</text></g><!--entity Outcome--><g class="entity" data-entity="Outcome" data-source-line="30" data-uid="ent0004" id="entity_Outcome"><rect fill="#FFFFCC" height="51.2969" rx="12.5" ry="12.5" style="stroke:#181818;stroke-width:0.5;" width="83.8955" x="330" y="7" /><image height="16" width="16" x="364.4478" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAdUlEQVR4Xp2QUQ7AIAhDvf/ZPNNcMGKgto7sJXxQaHFr7T8PCogteDHkbA56H8PLNdihJCOWzVdR1NWtB+3gMGMftdUn0jCaKwHSzIwsRC4orRTw1ceAawjT0WzIS6oH/4QtpZ94Mzv0+VWzo66WzJH9CTiIvNiEkgS4JS3cAAAAAElFTkSuQmCC" y="17" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="63.8955" x="340" y="44.9951">Outcome</text></g><!--entity Capability--><g class="entity" data-entity="Capability" data-source-line="31" data-uid="ent0005" id="entity_Capability"><rect fill="#FFFFCC" height="51.2969" rx="12.5" ry="12.5" style="stroke:#181818;stroke-width:0.5;" width="90.1504" x="171" y="135" /><image height="16" width="16" x="208.5752" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAUElEQVR4XmNgIB78w4GJBv++3lv1HxmDxNAV4QNDzAD0gMKHsQKstmETQ9cIA1gVYxND1wgDWBVjE0PXCANYFWMTAyumEGM3mVix4WIAJRgAFyCi5v7dvaAAAAAASUVORK5CYII=" y="145" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="70.1504" x="181" y="172.9951">Capability</text></g><!--entity Function--><g class="entity" data-entity="Function" data-source-line="32" data-uid="ent0006" id="entity_Function"><rect fill="#FFFFCC" height="51.2969" rx="12.5" ry="12.5" style="stroke:#181818;stroke-width:0.5;" width="80.3135" x="97" y="263" /><image height="16" width="16" x="129.6567" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAY0lEQVR4XrWSSw7AIAhEuf99ej1paLQfhBlY9CXGOL9NK4IZXugwVA+12xsVrvI69vYBxKfcHQnL1RFYZiOlMhr5ZwDpdOAVQt4N++7MfwKROYGZ6m+b5kzYxIQwuwmEbj7nBOFPREpY0CklAAAAAElFTkSuQmCC" y="273" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="60.3135" x="107" y="300.9951">Function</text></g><!--entity Role--><g class="entity" data-entity="Role" data-source-line="33" data-uid="ent0007" id="entity_Role"><rect fill="#FFFFCC" height="51.2969" rx="12.5" ry="12.5" style="stroke:#181818;stroke-width:0.5;" width="50.7959" x="271.5" y="263" /><image height="16" width="16" x="289.3979" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAARElEQVR4XmNgGHbgH5EYA4Al/v/f+h8XRpaHqUcxAF0DLs1ohpCnGd0QnAqINYAsQ5A1gw3ApghdA5pm3LFBBB4F1AQA5KwdoBiftUUAAAAASUVORK5CYII=" y="273" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="30.7959" x="281.5" y="300.9951">Role</text></g><!--entity Info--><g class="entity" data-entity="Info" data-source-line="34" data-uid="ent0008" id="entity_Info"><rect fill="#FFFFCC" height="51.2969" rx="12.5" ry="12.5" style="stroke:#181818;stroke-width:0.5;" width="131.7813" x="150" y="391" /><image height="16" width="16" x="208.3906" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAALklEQVR4XmNgGEzgHxkYBfz7/3/rf2IxbQwgA6MAyl2ArggfHjWAVgaQgQcBAAC8+aZ0EXbqwQAAAABJRU5ErkJggg==" y="401" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="111.7813" x="160" y="428.9951">Business Object</text></g><!--link Principle to Goal--><g class="link" data-entity-1="Principle" data-entity-2="Goal" data-source-line="37" data-uid="lnk9" id="link_Principle_Goal"><path d="M87.05,32.5 C118.87,32.5 156.45,32.5 183.91,32.5" fill="none" id="Principle-to-Goal" style="stroke:#181818;stroke-width:1;" /><polygon fill="#181818" points="189.91,32.5,180.91,28.5,184.91,32.5,180.91,36.5,189.91,32.5" style="stroke:#181818;stroke-width:1;" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="66.4346" x="105.5" y="25.5669">influences</text></g><!--link Goal to Outcome--><g class="link" data-entity-1="Goal" data-entity-2="Outcome" data-source-line="38" data-uid="lnk10" id="link_Goal_Outcome"><path d="M242.11,32.5 C266.05,32.5 295.92,32.5 323.91,32.5" fill="none" id="Goal-to-Outcome" style="stroke:#181818;stroke-width:1;" /><polygon fill="#181818" points="329.91,32.5,320.91,28.5,324.91,32.5,320.91,36.5,329.91,32.5" style="stroke:#181818;stroke-width:1;" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="51.7842" x="260.5" y="25.5669">leads to</text></g><!--link Goal to Capability--><g class="link" data-entity-1="Goal" data-entity-2="Capability" data-source-line="39" data-uid="lnk11" id="link_Goal_Capability"><path d="M216,58.09 C216,80.29 216,106.79 216,128.97" fill="none" id="Goal-to-Capability" style="stroke:#181818;stroke-width:1;" /><polygon fill="#181818" points="216,134.97,220,125.97,216,129.97,212,125.97,216,134.97" style="stroke:#181818;stroke-width:1;" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="64.854" x="217" y="101.0669">motivates</text></g><!--link Capability to Function--><g class="link" data-entity-1="Capability" data-entity-2="Function" data-source-line="40" data-uid="lnk12" id="link_Capability_Function"><path d="M194.7,186.2 C182.26,200.62 169,216 169,216 C169,216 159.7221,236.7339 150.4621,257.4139" fill="none" id="Capability-to-Function" style="stroke:#181818;stroke-width:1;" /><polygon fill="#181818" points="148.01,262.89,155.3388,256.3106,150.0534,258.3266,148.0374,253.0412,148.01,262.89" style="stroke:#181818;stroke-width:1;" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="71.6841" x="170" y="229.0669">realized by</text></g><!--link Function to Info--><g class="link" data-entity-1="Function" data-entity-2="Info" data-source-line="41" data-uid="lnk13" id="link_Function_Info"><path d="M152.42,314.09 C166.34,336.29 183.5222,363.7069 197.4322,385.8869" fill="none" id="Function-to-Info" style="stroke:#181818;stroke-width:1;" /><polygon fill="#181818" points="200.62,390.97,199.227,381.2202,197.9635,386.7341,192.4495,385.4706,200.62,390.97" style="stroke:#181818;stroke-width:1;" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="29.7832" x="183" y="357.0669">uses</text></g><!--reverse link Function to Role--><g class="link" data-entity-1="Function" data-entity-2="Role" data-source-line="42" data-uid="lnk15" id="link_Function_Role"><path d="M183.37,288.5 C212.81,288.5 245.83,288.5 271.17,288.5" fill="none" id="Function-backto-Role" style="stroke:#181818;stroke-width:1;" /><polygon fill="#181818" points="177.37,288.5,186.37,292.5,182.37,288.5,186.37,284.5,177.37,288.5" style="stroke:#181818;stroke-width:1;" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="58.9063" x="195.25" y="281.5669">performs</text></g><!--reverse link Capability to Role--><g class="link" data-entity-1="Capability" data-entity-2="Role" data-source-line="43" data-uid="lnk17" id="link_Capability_Role"><path d="M235.0543,191.1372 C249.3243,213.3372 266.97,240.79 281.23,262.97" fill="none" id="Capability-backto-Role" style="stroke:#181818;stroke-width:1;" /><polygon fill="#181818" points="231.81,186.09,233.3117,195.8237,234.5136,190.296,240.0413,191.498,231.81,186.09" style="stroke:#181818;stroke-width:1;" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="56.6846" x="263" y="229.0669">supports</text></g><!--reverse link Role to Info--><g class="link" data-entity-1="Role" data-entity-2="Info" data-source-line="44" data-uid="lnk19" id="link_Role_Info"><path d="M277.9457,319.1372 C263.6757,341.3372 246.03,368.79 231.77,390.97" fill="none" id="Role-backto-Info" style="stroke:#181818;stroke-width:1;" /><polygon fill="#181818" points="281.19,314.09,272.9587,319.498,278.4864,318.296,279.6883,323.8237,281.19,314.09" style="stroke:#181818;stroke-width:1;" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="81.415" x="263" y="357.0669">managed by</text></g><rect fill="none" height="166.6719" rx="7.5" ry="7.5" style="stroke:#000000;stroke-width:1;" width="340.2441" x="53.6514" y="459.2969" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="275.6113" x="58.6514" y="477.292">Metamodel of Business Layer Concepts</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="330.2441" x="58.6514" y="493.5889">based on TOGAF / ArchiMate core relationships</text><line style="stroke:#000000;stroke-width:1;" x1="53.6514" x2="393.8955" y1="501.8906" y2="501.8906" /><line style="stroke:#000000;stroke-width:1;" x1="53.6514" x2="393.8955" y1="503.8906" y2="503.8906" /><image height="16" width="16" x="58.6514" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAOklEQVR4XmNgoDL4RyTGCnBKYAFY1WITxGUjNjGsgqMGDAYDcAGsarEJUuwCig3ABXCqhdlICFMPAADlsz2F3kTS7gAAAABJRU5ErkJggg==" y="508.1875" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="69.5488" x="78.1016" y="519.8857">: principle</text><image height="16" width="16" x="58.6514" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAdElEQVR4Xq2SAQ7AIAgD/f/bfJMajGxYC7Jkl5AItmVbVopPM/WJaaq1dy2dgY6yGbHkHg0WbyubHxyiWw/+V4BiNpdzyhz1NoQGLMH2DfAcBtx6GxCGsDmaBXeT14N/wkTp/0Chj581K97WlNnyvAJe/MoAdTqU1kiehc8AAAAASUVORK5CYII=" y="524.4844" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="104.5557" x="78.1016" y="536.1826">: business goal</text><image height="16" width="16" x="58.6514" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAdUlEQVR4Xp2QUQ7AIAhDvf/ZPNNcMGKgto7sJXxQaHFr7T8PCogteDHkbA56H8PLNdihJCOWzVdR1NWtB+3gMGMftdUn0jCaKwHSzIwsRC4orRTw1ceAawjT0WzIS6oH/4QtpZ94Mzv0+VWzo66WzJH9CTiIvNiEkgS4JS3cAAAAAElFTkSuQmCC" y="540.7813" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="136.0762" x="78.1016" y="552.4795">: business outcome</text><image height="16" width="16" x="58.6514" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAUElEQVR4XmNgIB78w4GJBv++3lv1HxmDxNAV4QNDzAD0gMKHsQKstmETQ9cIA1gVYxND1wgDWBVjE0PXCANYFWMTAyumEGM3mVix4WIAJRgAFyCi5v7dvaAAAAAASUVORK5CYII=" y="557.0781" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="77.2393" x="78.1016" y="568.7764">: capability</text><image height="16" width="16" x="58.6514" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAY0lEQVR4XrWSSw7AIAhEuf99ej1paLQfhBlY9CXGOL9NK4IZXugwVA+12xsVrvI69vYBxKfcHQnL1RFYZiOlMhr5ZwDpdOAVQt4N++7MfwKROYGZ6m+b5kzYxIQwuwmEbj7nBOFPREpY0CklAAAAAElFTkSuQmCC" y="573.375" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="66.3564" x="78.1016" y="585.0732">: function</text><image height="16" width="16" x="58.6514" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAARElEQVR4XmNgGHbgH5EYA4Al/v/f+h8XRpaHqUcxAF0DLs1ohpCnGd0QnAqINYAsQ5A1gw3ApghdA5pm3LFBBB4F1AQA5KwdoBiftUUAAAAASUVORK5CYII=" y="589.6719" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="35.9912" x="78.1016" y="601.3701">: role</text><image height="16" width="16" x="58.6514" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAALklEQVR4XmNgGEzgHxkYBfz7/3/rf2IxbQwgA6MAyl2ArggfHjWAVgaQgQcBAAC8+aZ0EXbqwQAAAABJRU5ErkJggg==" y="605.9688" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="117.7764" x="78.1016" y="617.667">: business object</text></g></svg>
+</figure>
+
+<h3 id="goal">Goal</h3>
+<p>A <strong>long-term strategic aim</strong> that guides the organization's direction.</p>
+
+<h3 id="outcome">Outcome</h3>
+<p>A <strong>measurable result</strong> aligned with one or more goals.</p>
+
+<h3 id="capability">Capability</h3>
+<p>An <strong>organizational ability</strong> to perform coordinated actions using people, processes, and resources.</p>
+
+<h3 id="function">Function</h3>
+<p>A <strong>logical grouping of activities</strong> that deliver part of a capability.</p>
+
+<h3 id="role">Role</h3>
+<p>A <strong>responsibility or behavior</strong> assigned to individuals, organizations, or systems.</p>
+
+<h3 id="business-object">Business Object</h3>
+<p>An <strong>informational concept</strong> used in business processes, e.g., <em>order</em>, <em>client</em>, or <em>facility</em>.</p>
+
+<hr />
+
+
+
+
+</div>
+</div>  <!-- /inner-wrapper -->
+</div>  <!-- /row -->
+</div>  <!-- /container -->
+</div>  <!-- /segment-content -->
+
+<script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+<script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+<script type="text/javascript" src="assets/js/window-hash.js"> </script>
+<a name="bottom"> </a>
+<div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+<div class="container">  <!-- container -->
+
+<div class="inner-wrapper">
+  <p>
+    IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="http://who.int">WHO</a>.  Package smart.who.int.ra#0.2.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Jul 31, 2025 10:50+0000">2025-07-31</span>
+    <br/>
+    <span style="color: var(--footer-highlight-text-color)">
+                Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+| <a style="color: #81BEF7" target="_blank" href="http://smart.who.int/ra/history.html">Version History</a> | <a style="color: #81BEF7" rel="license" href="license.html">License</a>
+    </span>
+  </p>
+</div>  <!-- /inner-wrapper -->
+</div>  <!-- /container -->
+</div>  <!-- /segment-footer -->
+
+<div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+<div class="container">  <!-- container -->
+</div>  <!-- /container -->
+</div>  <!-- /segment-post-footer -->
+
+<!-- JS and analytics only. -->
+<!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+<script type="text/javascript" src="assets/js/respond.min.js"> </script>
+<script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+<script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+<script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+<script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
+<!-- Analytics Below
+================================================== -->
+
+
+
+

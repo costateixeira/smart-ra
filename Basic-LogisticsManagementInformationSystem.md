@@ -1,0 +1,87 @@
+# Resource LogisticsManagementInformationSystem
+
+
+
+## Resource Content
+
+```json
+{
+  "resourceType" : "Basic",
+  "id" : "LogisticsManagementInformationSystem",
+  "extension" : [
+    {
+      "url" : "http://hl7.org/fhir/5.0/StructureDefinition/extension-ActorDefinition.url",
+      "valueUri" : "http://smart.who.int/ra/ActorDefinition/LogisticsManagementInformationSystem"
+    },
+    {
+      "url" : "http://hl7.org/fhir/5.0/StructureDefinition/extension-ActorDefinition.version",
+      "valueString" : "0.2.0"
+    },
+    {
+      "url" : "http://hl7.org/fhir/5.0/StructureDefinition/extension-ActorDefinition.name",
+      "valueString" : "Logistics Management Information System"
+    },
+    {
+      "url" : "http://hl7.org/fhir/5.0/StructureDefinition/extension-ActorDefinition.title",
+      "valueString" : "Logistics Management Information System"
+    },
+    {
+      "url" : "http://hl7.org/fhir/5.0/StructureDefinition/extension-ActorDefinition.status",
+      "valueCode" : "active"
+    },
+    {
+      "url" : "http://hl7.org/fhir/5.0/StructureDefinition/extension-ActorDefinition.experimental",
+      "valueBoolean" : false
+    },
+    {
+      "url" : "http://hl7.org/fhir/5.0/StructureDefinition/extension-ActorDefinition.date",
+      "valueDateTime" : "2025-12-18T05:26:24+00:00"
+    },
+    {
+      "url" : "http://hl7.org/fhir/5.0/StructureDefinition/extension-ActorDefinition.publisher",
+      "valueString" : "WHO"
+    },
+    {
+      "url" : "http://hl7.org/fhir/5.0/StructureDefinition/extension-ActorDefinition.contact",
+      "valueContactDetail" : {
+        "name" : "WHO",
+        "telecom" : [
+          {
+            "system" : "url",
+            "value" : "http://who.int"
+          }
+        ]
+      }
+    },
+    {
+      "url" : "http://hl7.org/fhir/5.0/StructureDefinition/extension-ActorDefinition.description",
+      "valueMarkdown" : "A system that manages the supply chain operations, including tracking and distribution of health commodities."
+    },
+    {
+      "url" : "http://hl7.org/fhir/5.0/StructureDefinition/extension-ActorDefinition.jurisdiction",
+      "valueCodeableConcept" : {
+        "coding" : [
+          {
+            "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+            "code" : "001",
+            "display" : "World"
+          }
+        ]
+      }
+    },
+    {
+      "url" : "http://hl7.org/fhir/5.0/StructureDefinition/extension-ActorDefinition.type",
+      "valueCode" : "system"
+    }
+  ],
+  "code" : {
+    "coding" : [
+      {
+        "system" : "http://hl7.org/fhir/fhir-types",
+        "code" : "ActorDefinition"
+      }
+    ]
+  }
+}
+
+```
