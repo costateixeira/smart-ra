@@ -4,7 +4,7 @@ on:
   push:
     paths:
       - "archimate/**"
-      - ".github/workflows/publish-html-report.yml"
+      - ".github/workflows/archimate.yml"
   workflow_dispatch: # manual trigger
 
 jobs:
